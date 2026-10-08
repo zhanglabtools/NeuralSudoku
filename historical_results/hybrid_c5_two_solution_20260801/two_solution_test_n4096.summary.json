@@ -1,0 +1,17 @@
+{
+  "experiment": "controlled_exactly_two_solution_sudoku",
+  "n": 4096,
+  "source_split": "test",
+  "seed": 20260801,
+  "sources_seen": 27245,
+  "trades_tested": 192791,
+  "rejected_three_plus": 188695,
+  "rejected_wrong_pair": 0,
+  "mean_base_clues": 23.8232421875,
+  "min_base_clues": 20,
+  "max_base_clues": 28,
+  "mean_base_enum_nodes": 123.47021484375,
+  "sha256": "8c5f5382a4f1606b1b4d9b2272ce75aa981d0325f78a8103f8776666197a9ee6",
+  "elapsed_seconds": 1445.587783496827,
+  "certification": "exhaustive DLX ended with exactly solutions_a and solutions_b before cap=3"
+}

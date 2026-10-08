@@ -1,0 +1,108 @@
+{
+  "status": "complete",
+  "runs": [
+    {
+      "solver": "rrn",
+      "repeat": 0,
+      "n": 1024,
+      "device": "cpu",
+      "batch_size": 1,
+      "batch_latency": {
+        "n": 1024,
+        "mean_seconds": 0.3620365559709171,
+        "p50_seconds": 0.3586172666400671,
+        "p95_seconds": 0.3810054765082896
+      },
+      "single_query_latency": {
+        "n": 1024,
+        "mean_seconds": 0.3620365559709171,
+        "p50_seconds": 0.3586172666400671,
+        "p95_seconds": 0.3810054765082896
+      },
+      "pipeline_seconds": 370.7254333142191,
+      "loop_wall_seconds": 370.73518493399024,
+      "throughput_puzzles_per_second": 2.7621520078771584,
+      "valid": 930,
+      "exact": 930,
+      "valid_not_exact": 0,
+      "D4_n": 20,
+      "D4_valid": 14,
+      "eligible": true,
+      "timing_context": "cpu-controlled",
+      "memory_scope": "RSS includes runtime/model/host inputs; CUDA peak_allocated includes live model and activations",
+      "peak_process_rss_bytes": 576053248,
+      "peak_cuda_allocated_bytes": null,
+      "peak_cuda_reserved_bytes": null,
+      "result_sha256": "44a29143b098bc8a13073ceb143d69a9bc588d4e90672ebb2b8d151fa082f144"
+    },
+    {
+      "solver": "rrn",
+      "repeat": 1,
+      "n": 1024,
+      "device": "cpu",
+      "batch_size": 1,
+      "batch_latency": {
+        "n": 1024,
+        "mean_seconds": 0.35863401153073937,
+        "p50_seconds": 0.3576815761625767,
+        "p95_seconds": 0.3661129232496023
+      },
+      "single_query_latency": {
+        "n": 1024,
+        "mean_seconds": 0.35863401153073937,
+        "p50_seconds": 0.3576815761625767,
+        "p95_seconds": 0.3661129232496023
+      },
+      "pipeline_seconds": 367.2412278074771,
+      "loop_wall_seconds": 367.25088290311396,
+      "throughput_puzzles_per_second": 2.78835795782935,
+      "valid": 930,
+      "exact": 930,
+      "valid_not_exact": 0,
+      "D4_n": 20,
+      "D4_valid": 14,
+      "eligible": true,
+      "timing_context": "cpu-controlled",
+      "memory_scope": "RSS includes runtime/model/host inputs; CUDA peak_allocated includes live model and activations",
+      "peak_process_rss_bytes": 577396736,
+      "peak_cuda_allocated_bytes": null,
+      "peak_cuda_reserved_bytes": null,
+      "result_sha256": "1a8a1bc321230308c42b7cdb442a6d66b44569e98c181e43f2fa5569d1411175"
+    },
+    {
+      "solver": "rrn",
+      "repeat": 2,
+      "n": 1024,
+      "device": "cpu",
+      "batch_size": 1,
+      "batch_latency": {
+        "n": 1024,
+        "mean_seconds": 0.3647035113226593,
+        "p50_seconds": 0.3582982011139393,
+        "p95_seconds": 0.3934449194930493
+      },
+      "single_query_latency": {
+        "n": 1024,
+        "mean_seconds": 0.3647035113226593,
+        "p50_seconds": 0.3582982011139393,
+        "p95_seconds": 0.3934449194930493
+      },
+      "pipeline_seconds": 373.45639559440315,
+      "loop_wall_seconds": 373.466183161363,
+      "throughput_puzzles_per_second": 2.741953309890903,
+      "valid": 930,
+      "exact": 930,
+      "valid_not_exact": 0,
+      "D4_n": 20,
+      "D4_valid": 14,
+      "eligible": true,
+      "timing_context": "cpu-controlled",
+      "memory_scope": "RSS includes runtime/model/host inputs; CUDA peak_allocated includes live model and activations",
+      "peak_process_rss_bytes": 577806336,
+      "peak_cuda_allocated_bytes": null,
+      "peak_cuda_reserved_bytes": null,
+      "result_sha256": "4af80d922ba359eeb49c31555f7297bd6caf6fa62874dbc1115b55b054419ff6"
+    }
+  ],
+  "fingerprint": "c05fecc2378c049ffec91cb3ed3b2a796404c494ac3a30ebb309f03cf8ceb862"
+}

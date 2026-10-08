@@ -1,0 +1,45 @@
+[
+  {
+    "left_global_index": 240822,
+    "right_global_index": 582628,
+    "left_split": 2,
+    "right_split": 0,
+    "left_rating": 1.399999976158142,
+    "right_rating": 1.2000000476837158,
+    "transpose": false,
+    "row_oriented_mapping": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "column_oriented_mapping": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "digit_mapping_1_to_9": [
+      3,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "puzzle_transform_exactly_verified": true
+  }
+]

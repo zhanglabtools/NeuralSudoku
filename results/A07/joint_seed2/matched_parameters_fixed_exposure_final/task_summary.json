@@ -1,0 +1,135 @@
+{
+  "status": "complete",
+  "checkpoint_sha256": "e176a7b8a67ba9ef4f30ab684ea5bfcd4dfb8b7128130651bc5b395a8b53da2d",
+  "evaluations": [
+    {
+      "steps": 64,
+      "summary": "results/A07/joint_seed2/matched_parameters_fixed_exposure_final/final_e176a7b8/T64/summary.json",
+      "summary_sha256": "3e3f60ba6c24b455fdaf2796b27b28ab4a8f5ba494646a1dd722abe968d2a9fc",
+      "per_puzzle": "results/A07/joint_seed2/matched_parameters_fixed_exposure_final/final_e176a7b8/T64/per_puzzle.npz",
+      "metrics": [
+        {
+          "bucket": "all",
+          "n": 300702,
+          "exact_count": 279024,
+          "exact_rate": 0.927908693656843,
+          "valid_count": 279024,
+          "valid_rate": 0.927908693656843,
+          "clue_ok_count": 300702,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 279024,
+          "grid_valid_ignoring_clues_rate": 0.927908693656843,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9821990205470639
+        },
+        {
+          "bucket": "rating_0",
+          "n": 129436,
+          "exact_count": 128849,
+          "exact_rate": 0.9954649402021076,
+          "valid_count": 128849,
+          "valid_rate": 0.9954649402021076,
+          "clue_ok_count": 129436,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 128849,
+          "grid_valid_ignoring_clues_rate": 0.9954649402021076,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9990403761199109
+        },
+        {
+          "bucket": "rating_0_1",
+          "n": 9285,
+          "exact_count": 9080,
+          "exact_rate": 0.9779213785675821,
+          "valid_count": 9080,
+          "valid_rate": 0.9779213785675821,
+          "clue_ok_count": 9285,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 9080,
+          "grid_valid_ignoring_clues_rate": 0.9779213785675821,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9954912011275321
+        },
+        {
+          "bucket": "rating_1_2",
+          "n": 79488,
+          "exact_count": 73575,
+          "exact_rate": 0.9256114130434783,
+          "valid_count": 73575,
+          "valid_rate": 0.9256114130434783,
+          "clue_ok_count": 79488,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 73575,
+          "grid_valid_ignoring_clues_rate": 0.9256114130434783,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9823295014015626
+        },
+        {
+          "bucket": "rating_2_4",
+          "n": 75950,
+          "exact_count": 62908,
+          "exact_rate": 0.8282817643186307,
+          "valid_count": 62908,
+          "valid_rate": 0.8282817643186307,
+          "clue_ok_count": 75950,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 62908,
+          "grid_valid_ignoring_clues_rate": 0.8282817643186307,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9567792326010452
+        },
+        {
+          "bucket": "rating_4_plus",
+          "n": 6543,
+          "exact_count": 4612,
+          "exact_rate": 0.7048754394008865,
+          "valid_count": 4612,
+          "valid_rate": 0.7048754394008865,
+          "clue_ok_count": 6543,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 4612,
+          "grid_valid_ignoring_clues_rate": 0.7048754394008865,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9236579286505416
+        }
+      ]
+    }
+  ],
+  "signature": {
+    "args": {
+      "checkpoints": [
+        "results/A07/joint_seed2/final.pt"
+      ],
+      "cache_path": "data/cache_full_3m.npz",
+      "output_dir": "results/A07/joint_seed2/matched_parameters_fixed_exposure_final",
+      "steps": [
+        64
+      ],
+      "split": 2,
+      "test_global_ids": "results/clean_evaluation/test_global_ids.npy",
+      "rating_min_exclusive": null,
+      "offset": 0,
+      "limit": 0,
+      "batch_size": 128,
+      "device": "cuda",
+      "warmup": 2,
+      "timing_samples": 0,
+      "threads": 1,
+      "seed": 20260929,
+      "readout_protocol": "common_final"
+    },
+    "checkpoint_sha256": "e176a7b8a67ba9ef4f30ab684ea5bfcd4dfb8b7128130651bc5b395a8b53da2d",
+    "cache_sha256": "98406b669a81a0f2f3a2df2230e23ee67793c46df91e85fe707129c3da7159bd",
+    "test_manifest_sha256": "824e4450ae41bdd32b41341cecbb90c6744f971a14524e01415e347913ffcde6",
+    "calibration_sha256": null,
+    "source_sha256": {
+      "e2_eval_task.py": "f3f9a458b950dd980a3199b3a7720fd4f49c0ebbb6cd8454fa6a30f92f3f1ab4",
+      "e2_eval_checkpoints.py": "8f14886e4143508e63b57cfb498420d5b8399d2c5dafbf983e6b81b18a0820ab",
+      "e2_rollout.py": "70270eb21b72d9a953aa8c18af9755f14d05ca1fa806e49cd604db8cbea58287",
+      "e2_metrics.py": "9f8b37ca2bae31278df223cce842b95b78cfa68075f9aadb54c35cf85a51f4c4",
+      "e2_architectures.py": "ef9440e1b307adca29607c3275e6345aed77fbda2d4ecfd53536c656ccc99fde"
+    },
+    "expected_n": 300702
+  },
+  "seed": 20260929
+}

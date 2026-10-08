@@ -1,0 +1,82 @@
+{
+  "source_run": "A02_d4_repeat3/shared repeat0",
+  "new_model_evaluation": false,
+  "statistic_recomputed_from_saved_evidence": true,
+  "inference_seed": 20260813,
+  "repeats_rule": "Same seed reset before each runner and repeat; repeats probe execution variability.",
+  "n": 6543,
+  "dynamic_exact": 6351,
+  "frozen_exact": 5612,
+  "both_exact": 5592,
+  "dynamic_only_exact": 759,
+  "frozen_only_exact": 20,
+  "neither_exact": 172,
+  "net_gain": 739,
+  "difference_pp": 11.294513220235366,
+  "dynamic_percent": 97.06556625401193,
+  "frozen_percent": 85.77105303377655,
+  "retention_percent": 88.04912612187057,
+  "bootstrap": {
+    "method": "paired nonparametric percentile bootstrap via the four joint Bernoulli categories; historical pure NumPy function",
+    "samples": 20000,
+    "seed": 20260914,
+    "seed_derivation": "20260813 + 100*1 + 1; reused for the recalculation, not recorded as an A02 original CI",
+    "ci_low_pp": 10.515054256457283,
+    "ci_high_pp": 12.104539202200826,
+    "numpy_version": "2.3.5",
+    "old_record_reproduced_pp": [
+      10.438636710988842,
+      12.012838147638698
+    ]
+  },
+  "dynamic_cumulative_exact": [
+    4405,
+    4748,
+    5578,
+    6073,
+    6274,
+    6351
+  ],
+  "frozen_cumulative_exact": [
+    4405,
+    4643,
+    5029,
+    5340,
+    5541,
+    5612
+  ],
+  "changed_positions_vs_original_repeat0": [
+    {
+      "test_split_position": 9181,
+      "original_exact": 0,
+      "shared_dynamic_exact": 1,
+      "shared_frozen_exact": 0,
+      "frozen_difference_row_present": false
+    },
+    {
+      "test_split_position": 151088,
+      "original_exact": 0,
+      "shared_dynamic_exact": 1,
+      "shared_frozen_exact": 0,
+      "frozen_difference_row_present": false
+    }
+  ],
+  "shared_fork_metadata": {
+    "repeat": 0,
+    "runner": "shared",
+    "elapsed_seconds": 75.20053320378065,
+    "shared_fork_checked": 205,
+    "shared_fork_applicable": 205,
+    "elapsed_scope": "both arms"
+  },
+  "checkpoint_sha256": "fabdc1f44ce3e2510a30972ccff6abe220dc7b057f97eac711cd7f67451453d5",
+  "sources": {
+    "A02_d4_repeat3/condition_summary.csv": "f38620789bebecc2c7820a29a1fd60344850124eb1296f81849c118db238b7ed",
+    "A02_d4_repeat3/paired_comparisons.csv": "a2b11fcddd4a89a54bfb8b220ddadeee07e6ba5b6220f7dae8be583d4dd9f57e",
+    "A02_d4_repeat3/disagreements.csv": "b1e3acfcb405d4f772dd2e1729e6452c2fc4b81bed3d23373321dff64de10db0",
+    "A02_d4_repeat3/metadata.json": "72ece2d0979b38d92d245f08046cec8529108bb2438a1da7d8fe68f1fe7069c8",
+    "eval_d4_runner_audit.py": "ea755701e5b5d1e505bdb68c85a2a62bf477dba3a4ddfd1410d3a740b6095483",
+    "eval_clue_hidden_state_ablation.py": "be492bdf3199df0c5332715c6be4cd7d5b131f2a5a3942397ea101573bf7a6e0"
+  },
+  "source_note": "A02 summaries do not directly include shared_dynamic vs shared_frozen. Their four categories are reconstructed exactly using the complete original-vs-arm difference lists. The bootstrap does not require full puzzle arrays once the four categories are established."
+}

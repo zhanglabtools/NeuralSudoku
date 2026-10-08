@@ -1,0 +1,3 @@
+bucket,n,exact_count,exact_rate,valid_count,valid_rate,clue_ok_count,clue_ok_rate,grid_valid_ignoring_clues_count,grid_valid_ignoring_clues_rate,valid_not_exact_count,cell_accuracy
+all,6543,4834,0.7388048295888736,4834,0.7388048295888736,6543,1.0,4834,0.7388048295888736,0,0.9247504165227941
+rating_4_plus,6543,4834,0.7388048295888736,4834,0.7388048295888736,6543,1.0,4834,0.7388048295888736,0,0.9247504165227941

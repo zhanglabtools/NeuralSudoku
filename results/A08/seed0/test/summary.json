@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "seed": 0,
+  "rows": [
+    {
+      "bucket": "all",
+      "n": 300702,
+      "exact_count": 299657,
+      "exact_rate": 0.996524798637854,
+      "valid_count": 299657
+    },
+    {
+      "bucket": "D4",
+      "n": 6543,
+      "exact_count": 6356,
+      "exact_rate": 0.9714198379948036,
+      "valid_count": 6356
+    }
+  ],
+  "checkpoint_sha256": "65043089b32cf4252fa762c710a4481f185f4ec77eea6574ed4fe03458eac2ef",
+  "clean_manifest_sha256": "824e4450ae41bdd32b41341cecbb90c6744f971a14524e01415e347913ffcde6",
+  "test_id_sha256": "0d807510714dcaf3c4fa7478d5a46439bf8c603b9874f2906bd313d150f4362e",
+  "smoke": false
+}

@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "count": 3000000,
+  "scope": "full_dataset",
+  "unique_symmetry_classes": 2999999,
+  "repeated_classes": 1,
+  "rows_in_repeated_classes": 2,
+  "cross_split_classes": 1,
+  "rows_in_cross_split_classes": 2,
+  "test_rows_equivalent_to_train": 1,
+  "test_rows_equivalent_to_validation": 0,
+  "full_certificate_collision_check": "passed",
+  "completed_utc": "2026-09-29T07:32:11.108527+00:00",
+  "group": "digit permutations; row permutations within bands; band permutations; column permutations within stacks; stack permutations; transpose"
+}

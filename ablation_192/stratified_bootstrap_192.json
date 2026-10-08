@@ -1,0 +1,102 @@
+{
+  "success_definition": "first_valid_cycle >= 0: at least one legal candidate generated within the budget",
+  "difference_direction": "ablated minus full, in percentage points",
+  "grouping": "Four outcome strata; validation and test pooled within each outcome stratum",
+  "group_order": [
+    "anchor_success",
+    "c5_early",
+    "c5_failure",
+    "c5_late"
+  ],
+  "group_sizes": [
+    48,
+    48,
+    48,
+    48
+  ],
+  "sample_identity_order": "lexicographic (split, split_position as CSV text)",
+  "seed": 20260801,
+  "replicates": 20000,
+  "sampling": "Within-stratum uniform paired sampling with replacement; identical sampled indices for all conditions",
+  "quantiles": [
+    0.025,
+    0.975
+  ],
+  "quantile_method": "numpy.quantile linear",
+  "numpy_version": "2.3.5",
+  "display_rounding": "Python fixed-point formatting to 2 decimals; exact -40.625 prints -40.62",
+  "rows": [
+    {
+      "condition": "full",
+      "val_success": 48,
+      "test_success": 96,
+      "total_success": 144,
+      "n": 192,
+      "success_rate_percent": 75.0,
+      "delta_pp": 0.0,
+      "delta_pp_2dp": "0.00",
+      "lost": 0,
+      "gained": 0,
+      "ci95_lower_pp": 0.0,
+      "ci95_upper_pp": 0.0,
+      "ci95_2dp": [
+        "0.00",
+        "0.00"
+      ]
+    },
+    {
+      "condition": "no_recovery",
+      "val_success": 16,
+      "test_success": 33,
+      "total_success": 49,
+      "n": 192,
+      "success_rate_percent": 25.520833333333332,
+      "delta_pp": -49.47916666666667,
+      "delta_pp_2dp": "-49.48",
+      "lost": 95,
+      "gained": 0,
+      "ci95_lower_pp": -50.0,
+      "ci95_upper_pp": -48.4375,
+      "ci95_2dp": [
+        "-50.00",
+        "-48.44"
+      ]
+    },
+    {
+      "condition": "recovery_only",
+      "val_success": 19,
+      "test_success": 42,
+      "total_success": 61,
+      "n": 192,
+      "success_rate_percent": 31.770833333333332,
+      "delta_pp": -43.22916666666667,
+      "delta_pp_2dp": "-43.23",
+      "lost": 84,
+      "gained": 1,
+      "ci95_lower_pp": -46.35416666666667,
+      "ci95_upper_pp": -40.10416666666667,
+      "ci95_2dp": [
+        "-46.35",
+        "-40.10"
+      ]
+    },
+    {
+      "condition": "no_cell",
+      "val_success": 19,
+      "test_success": 47,
+      "total_success": 66,
+      "n": 192,
+      "success_rate_percent": 34.375,
+      "delta_pp": -40.625,
+      "delta_pp_2dp": "-40.62",
+      "lost": 79,
+      "gained": 1,
+      "ci95_lower_pp": -44.27083333333333,
+      "ci95_upper_pp": -36.97916666666667,
+      "ci95_2dp": [
+        "-44.27",
+        "-36.98"
+      ]
+    }
+  ]
+}

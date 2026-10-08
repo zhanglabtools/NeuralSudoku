@@ -1,0 +1,29 @@
+{
+  "schema_version": "dual_solution_dataset_audit/v1",
+  "dataset": "historical_results/hybrid_c5_two_solution_20260801/two_solution_test_n4096.npz",
+  "dataset_sha256": "8c5f5382a4f1606b1b4d9b2272ce75aa981d0325f78a8103f8776666197a9ee6",
+  "n": 4096,
+  "box_size": 3,
+  "independent_backtracking_recertified": true,
+  "backtracking_seeds": [
+    0,
+    1
+  ],
+  "total_backtracking_nodes": 11669214,
+  "independent_dlx_recertified": true,
+  "dlx_algorithm": "knuth_algorithm_x_dancing_links_324_columns",
+  "dlx_max_solutions": 3,
+  "total_dlx_nodes": 505734,
+  "standard_stabilizer_audited": true,
+  "symmetry_regimes": {
+    "local_trade_no_swap_certified": 4096
+  },
+  "difference_size_counts": {
+    "4": 4096
+  },
+  "trade_connected_all": true,
+  "minimal_unavoidable_all": true,
+  "raw_puzzle_duplicates": 0,
+  "unordered_pair_duplicates": 0,
+  "elapsed_seconds": 113.88617913704365
+}

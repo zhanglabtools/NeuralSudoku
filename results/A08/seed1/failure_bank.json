@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "split": 0,
+  "criterion": "rating>4 AND target Exact failure at T64",
+  "test_used": false,
+  "scanned": 52480,
+  "n": 16921,
+  "valid_not_exact": 0,
+  "backbone_sha256": "c468568e9f0495e9c5441304a785bfd8dc8a543755abfa65bee30dbf8e78a089",
+  "bank_sha256": "eef926b41be406de44057aff4a9f5d9368c981dbd634da369dd457f6649a3b04",
+  "data_key": "5eca123aabbb3b43d4fe27a6ff93aa0eab6d4f64b1a28785e55f724f81d2250f34d046afc86e7b623ac365365eff0f7f3623f77a34654ce3db436ff7dd9b7ae9",
+  "elapsed_seconds": 197.95183653570712,
+  "smoke": false
+}

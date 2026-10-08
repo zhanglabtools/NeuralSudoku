@@ -1,0 +1,159 @@
+[data] train=2399047 val=10000 test=300703 cache=data/cache_full_3m.npz
+[model] OfficialSATNet n=729 aux=300 m=600 max_iter=40 lr=0.002 device=cuda
+step      1/50000 loss=0.613269 elapsed=0.6s
+step    500/50000 loss=0.234804 elapsed=108.7s
+step   1000/50000 loss=0.220819 elapsed=199.3s
+step   1500/50000 loss=0.207852 elapsed=285.0s
+step   2000/50000 loss=0.199264 elapsed=369.7s
+step   2500/50000 loss=0.189409 elapsed=456.6s
+step   3000/50000 loss=0.181106 elapsed=548.6s
+step   3500/50000 loss=0.174223 elapsed=644.3s
+step   4000/50000 loss=0.167472 elapsed=741.8s
+step   4500/50000 loss=0.165192 elapsed=840.5s
+step   5000/50000 loss=0.166219 elapsed=940.2s
+step   5500/50000 loss=0.160892 elapsed=1041.4s
+step   6000/50000 loss=0.160380 elapsed=1144.0s
+step   6500/50000 loss=0.158791 elapsed=1247.6s
+step   7000/50000 loss=0.162054 elapsed=1352.2s
+step   7500/50000 loss=0.157439 elapsed=1457.3s
+step   8000/50000 loss=0.158531 elapsed=1562.6s
+step   8500/50000 loss=0.156605 elapsed=1668.6s
+step   9000/50000 loss=0.153104 elapsed=1774.6s
+step   9500/50000 loss=0.156559 elapsed=1880.2s
+step  10000/50000 loss=0.155805 elapsed=1994.3s
+[val] step=10000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0000  0.0000  1.0000   0.7035   22.555
+rating_0        4379   0.0000  0.0000  1.0000   0.7128   22.330
+rating_0_1       298   0.0000  0.0000  1.0000   0.7127   22.332
+rating_1_2      2650   0.0000  0.0000  1.0000   0.7026   22.562
+rating_2_4      2455   0.0000  0.0000  1.0000   0.6892   22.909
+rating_4_plus    218   0.0000  0.0000  1.0000   0.6732   23.303
+[save] model_official_satnet_full_50k_20260711_best.pt best_val_exact=0.0000
+step  10500/50000 loss=0.156698 elapsed=2127.6s
+step  11000/50000 loss=0.158200 elapsed=2233.2s
+step  11500/50000 loss=0.152746 elapsed=2337.7s
+step  12000/50000 loss=0.151511 elapsed=2442.4s
+step  12500/50000 loss=0.153454 elapsed=2548.0s
+step  13000/50000 loss=0.151468 elapsed=2653.6s
+step  13500/50000 loss=0.155957 elapsed=2758.8s
+step  14000/50000 loss=0.153204 elapsed=2864.1s
+step  14500/50000 loss=0.152217 elapsed=2968.7s
+step  15000/50000 loss=0.151403 elapsed=3073.4s
+step  15500/50000 loss=0.154596 elapsed=3178.0s
+step  16000/50000 loss=0.150854 elapsed=3282.3s
+step  16500/50000 loss=0.151169 elapsed=3386.5s
+step  17000/50000 loss=0.152848 elapsed=3490.8s
+step  17500/50000 loss=0.150975 elapsed=3595.2s
+step  18000/50000 loss=0.151560 elapsed=3699.5s
+step  18500/50000 loss=0.148052 elapsed=3803.9s
+step  19000/50000 loss=0.150481 elapsed=3908.6s
+step  19500/50000 loss=0.151385 elapsed=4013.4s
+step  20000/50000 loss=0.149840 elapsed=4118.3s
+[val] step=20000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0000  0.0000  1.0000   0.7283   22.278
+rating_0        4379   0.0000  0.0000  1.0000   0.7407   21.892
+rating_0_1       298   0.0000  0.0000  1.0000   0.7380   21.906
+rating_1_2      2650   0.0000  0.0000  1.0000   0.7253   22.342
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7115   22.824
+rating_4_plus    218   0.0000  0.0000  1.0000   0.6917   23.592
+step  20500/50000 loss=0.148871 elapsed=4250.3s
+step  21000/50000 loss=0.149824 elapsed=4355.0s
+step  21500/50000 loss=0.146719 elapsed=4459.8s
+step  22000/50000 loss=0.148466 elapsed=4564.7s
+step  22500/50000 loss=0.148258 elapsed=4669.8s
+step  23000/50000 loss=0.146180 elapsed=4774.8s
+step  23500/50000 loss=0.145576 elapsed=4879.8s
+step  24000/50000 loss=0.147517 elapsed=4984.8s
+step  24500/50000 loss=0.149157 elapsed=5089.4s
+step  25000/50000 loss=0.150829 elapsed=5194.2s
+step  25500/50000 loss=0.147832 elapsed=5298.9s
+step  26000/50000 loss=0.148112 elapsed=5403.3s
+step  26500/50000 loss=0.149515 elapsed=5507.7s
+step  27000/50000 loss=0.146696 elapsed=5612.0s
+step  27500/50000 loss=0.147429 elapsed=5716.3s
+step  28000/50000 loss=0.148519 elapsed=5820.2s
+step  28500/50000 loss=0.149166 elapsed=5924.0s
+step  29000/50000 loss=0.149492 elapsed=6027.9s
+step  29500/50000 loss=0.147531 elapsed=6131.3s
+step  30000/50000 loss=0.147965 elapsed=6235.0s
+[val] step=30000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0000  0.0000  1.0000   0.7343   22.247
+rating_0        4379   0.0000  0.0000  1.0000   0.7469   21.840
+rating_0_1       298   0.0000  0.0000  1.0000   0.7447   22.040
+rating_1_2      2650   0.0000  0.0000  1.0000   0.7315   22.314
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7169   22.809
+rating_4_plus    218   0.0000  0.0000  1.0000   0.6961   23.564
+step  30500/50000 loss=0.148758 elapsed=6365.2s
+step  31000/50000 loss=0.148832 elapsed=6468.5s
+step  31500/50000 loss=0.148278 elapsed=6571.8s
+step  32000/50000 loss=0.147724 elapsed=6674.8s
+step  32500/50000 loss=0.148691 elapsed=6777.8s
+step  33000/50000 loss=0.145115 elapsed=6880.4s
+step  33500/50000 loss=0.145640 elapsed=6983.1s
+step  34000/50000 loss=0.147555 elapsed=7085.9s
+step  34500/50000 loss=0.146205 elapsed=7188.4s
+step  35000/50000 loss=0.147985 elapsed=7295.3s
+step  35500/50000 loss=0.148358 elapsed=7401.8s
+step  36000/50000 loss=0.149333 elapsed=7503.8s
+step  36500/50000 loss=0.147811 elapsed=7605.9s
+step  37000/50000 loss=0.146875 elapsed=7708.0s
+step  37500/50000 loss=0.146715 elapsed=7810.1s
+step  38000/50000 loss=0.147363 elapsed=7912.2s
+step  38500/50000 loss=0.147809 elapsed=8014.0s
+step  39000/50000 loss=0.146132 elapsed=8115.7s
+step  39500/50000 loss=0.149571 elapsed=8217.2s
+step  40000/50000 loss=0.147002 elapsed=8318.6s
+[val] step=40000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0000  0.0000  1.0000   0.7361   22.210
+rating_0        4379   0.0000  0.0000  1.0000   0.7489   21.733
+rating_0_1       298   0.0000  0.0000  1.0000   0.7425   21.977
+rating_1_2      2650   0.0000  0.0000  1.0000   0.7356   22.271
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7168   22.892
+rating_4_plus    218   0.0000  0.0000  1.0000   0.6932   23.706
+step  40500/50000 loss=0.145744 elapsed=8446.7s
+step  41000/50000 loss=0.145750 elapsed=8547.9s
+step  41500/50000 loss=0.146786 elapsed=8649.1s
+step  42000/50000 loss=0.147160 elapsed=8750.3s
+step  42500/50000 loss=0.148641 elapsed=8851.5s
+step  43000/50000 loss=0.149347 elapsed=8952.5s
+step  43500/50000 loss=0.146304 elapsed=9053.4s
+step  44000/50000 loss=0.146785 elapsed=9154.1s
+step  44500/50000 loss=0.146922 elapsed=9254.6s
+step  45000/50000 loss=0.144555 elapsed=9355.3s
+step  45500/50000 loss=0.147228 elapsed=9455.9s
+step  46000/50000 loss=0.146672 elapsed=9556.5s
+step  46500/50000 loss=0.147152 elapsed=9656.7s
+step  47000/50000 loss=0.145615 elapsed=9756.9s
+step  47500/50000 loss=0.145857 elapsed=9857.1s
+step  48000/50000 loss=0.148483 elapsed=9957.3s
+step  48500/50000 loss=0.147216 elapsed=10057.6s
+step  49000/50000 loss=0.147902 elapsed=10157.7s
+step  49500/50000 loss=0.147045 elapsed=10257.5s
+step  50000/50000 loss=0.145866 elapsed=10358.1s
+[val] step=50000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0000  0.0000  1.0000   0.7379   22.211
+rating_0        4379   0.0000  0.0000  1.0000   0.7501   21.807
+rating_0_1       298   0.0000  0.0000  1.0000   0.7448   21.879
+rating_1_2      2650   0.0000  0.0000  1.0000   0.7356   22.222
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7210   22.834
+rating_4_plus    218   0.0000  0.0000  1.0000   0.7006   23.619
+[save-final] checkpoints/model_official_satnet_full_50k_20260711_final.pt
+[eval-progress] seen=50000 elapsed=137.2s rate=364.49/s
+[eval-progress] seen=100000 elapsed=266.7s rate=374.98/s
+[eval-progress] seen=150000 elapsed=395.9s rate=378.93/s
+[eval-progress] seen=200000 elapsed=525.1s rate=380.90/s
+[eval-progress] seen=250000 elapsed=662.4s rate=377.43/s
+[eval-progress] seen=300000 elapsed=791.7s rate=378.94/s
+[test] final
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all           300703   0.0000  0.0000  1.0000   0.7368   22.245
+rating_0      129436   0.0000  0.0000  1.0000   0.7493   21.796
+rating_0_1      9285   0.0000  0.0000  1.0000   0.7467   21.861
+rating_1_2     79489   0.0000  0.0000  1.0000   0.7348   22.290
+rating_2_4     75950   0.0000  0.0000  1.0000   0.7194   22.889
+rating_4_plus   6543   0.0000  0.0000  1.0000   0.7013   23.668

@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-09-29T08:19:40.842924+00:00",
+  "seed": 20260930,
+  "rule": "uniform sampling without replacement from clean full test or clean D4, preserving original cache order after sampling; no outcomes used",
+  "purpose": "latency/throughput distribution samples; full accuracy is evaluated separately",
+  "source_clean_count": 300702,
+  "source_d4_count": 6543,
+  "source_clean_id_bytes_sha256": "1b4dce4a37fb0008378c3d8ecd8e3bc54b867d2252360e74634cabae0a98fe6d",
+  "samples": {
+    "all_random1024": {
+      "n": 1024,
+      "ids_path": "results/A05_timing_samples/all_random1024.npy",
+      "sha256": "4086adf14ccde62e741f466b6cb62ee4d54e796943e0f9cb6b845cfaf56eb12b",
+      "data_path": "results/A05_timing_samples/all_random1024.npz",
+      "data_sha256": "8f7f35cd7544f5ab85509a0c3b50678654c88dbc731b28861ac6a6fe0f9120e4"
+    },
+    "D4_random512": {
+      "n": 512,
+      "ids_path": "results/A05_timing_samples/D4_random512.npy",
+      "sha256": "95ede7b001a6ab783145aa56b87d5c202049985bbbfb5c376e0497c496dcb190",
+      "data_path": "results/A05_timing_samples/D4_random512.npz",
+      "data_sha256": "cfd4fce8afe8df2a8b48a757f5400dac35b61c45224372aa0e777ae6455c370b"
+    }
+  }
+}

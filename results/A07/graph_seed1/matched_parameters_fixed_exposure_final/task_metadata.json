@@ -1,0 +1,36 @@
+{
+  "args": {
+    "checkpoints": [
+      "results/A07/graph_seed1/final.pt"
+    ],
+    "cache_path": "data/cache_full_3m.npz",
+    "output_dir": "results/A07/graph_seed1/matched_parameters_fixed_exposure_final",
+    "steps": [
+      64
+    ],
+    "split": 2,
+    "test_global_ids": "results/clean_evaluation/test_global_ids.npy",
+    "rating_min_exclusive": null,
+    "offset": 0,
+    "limit": 0,
+    "batch_size": 128,
+    "device": "cuda",
+    "warmup": 2,
+    "timing_samples": 0,
+    "threads": 1,
+    "seed": 20260929,
+    "readout_protocol": "common_final"
+  },
+  "checkpoint_sha256": "0f66cbfd632e0120913dcc2482bd1da72e8fc556057bf2077e870f4ae9ab1c97",
+  "cache_sha256": "98406b669a81a0f2f3a2df2230e23ee67793c46df91e85fe707129c3da7159bd",
+  "test_manifest_sha256": "824e4450ae41bdd32b41341cecbb90c6744f971a14524e01415e347913ffcde6",
+  "calibration_sha256": null,
+  "source_sha256": {
+    "e2_eval_task.py": "f3f9a458b950dd980a3199b3a7720fd4f49c0ebbb6cd8454fa6a30f92f3f1ab4",
+    "e2_eval_checkpoints.py": "8f14886e4143508e63b57cfb498420d5b8399d2c5dafbf983e6b81b18a0820ab",
+    "e2_rollout.py": "70270eb21b72d9a953aa8c18af9755f14d05ca1fa806e49cd604db8cbea58287",
+    "e2_metrics.py": "9f8b37ca2bae31278df223cce842b95b78cfa68075f9aadb54c35cf85a51f4c4",
+    "e2_architectures.py": "ef9440e1b307adca29607c3275e6345aed77fbda2d4ecfd53536c656ccc99fde"
+  },
+  "expected_n": 300702
+}

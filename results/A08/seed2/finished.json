@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "seed": 2,
+  "training_steps": 10000,
+  "best_step": 9500,
+  "best_validation_score": 1.974609375,
+  "best_checkpoint_sha256": "9f5bf6a68458c77c4127a7f70028f0340510b985746cb45d254012fc498d603d",
+  "final_checkpoint_sha256": "bf888f4a1ff6e2294617fec7bccf26b607a63abc12e04c75a72fd4cc27da7fe9",
+  "reflection_exposure": 120000,
+  "backbone": {
+    "path": "results/A07/joint_seed2/best.pt",
+    "sha256": "e176a7b8a67ba9ef4f30ab684ea5bfcd4dfb8b7128130651bc5b395a8b53da2d",
+    "finished_sha256": "92a50c3239b36f7338fa2b98608a3ab526414bebd38f34c3f3b5e6dd42de9de1",
+    "seed": 2,
+    "training_updates": 50000,
+    "training_exposure": 3200000,
+    "best_step": 50000,
+    "shared_with_A07": true,
+    "count_backbone_training_once": true
+  },
+  "test_used_for_selection": false,
+  "smoke": false,
+  "latest_invocation_seconds": 6716.376504564658
+}

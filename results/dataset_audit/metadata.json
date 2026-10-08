@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "input": {
+    "cache_path": "data/cache_full_3m.npz",
+    "files": [
+      {
+        "path": "data/cache_full_3m.npz",
+        "size": 180483249,
+        "sha256": "98406b669a81a0f2f3a2df2230e23ee67793c46df91e85fe707129c3da7159bd"
+      }
+    ],
+    "arrays": {
+      "puzzles": {
+        "shape": [
+          3000000,
+          81
+        ],
+        "dtype": "uint8"
+      },
+      "solutions": {
+        "shape": [
+          3000000,
+          81
+        ],
+        "dtype": "uint8"
+      },
+      "splits": {
+        "shape": [
+          3000000
+        ],
+        "dtype": "uint8"
+      },
+      "clues": {
+        "shape": [
+          3000000
+        ],
+        "dtype": "uint8"
+      },
+      "ratings": {
+        "shape": [
+          3000000
+        ],
+        "dtype": "float32"
+      }
+    }
+  },
+  "seed_candidates": [
+    0,
+    1,
+    42
+  ],
+  "test_split": 2,
+  "max_solutions": 2,
+  "max_nodes": 0,
+  "timeout_seconds": 5.0,
+  "code_sha256": {
+    "audit_dataset.py": "bdf3a13cca530e68837b0f4387cc9356e93cf2ce182e74aa7339aaee025d3f42",
+    "sudoku_dlx_solver.py": "e1147ab0d2b300d12a797937e1880c9ae8e00964e0849bc8dec63fa251c0c987"
+  },
+  "last_invocation": {
+    "utc": "2026-09-29T08:41:29.248697+00:00",
+    "argv": {
+      "cache": "data/cache_full_3m.npz",
+      "output": "results/dataset_audit",
+      "stage": "all",
+      "seed_candidates": "0,1,42",
+      "test_split": 2,
+      "workers": 8,
+      "timeout_seconds": 5.0,
+      "max_nodes": 0,
+      "max_new_unique": 0,
+      "chunk_size": 10000,
+      "commit_every": 1024
+    },
+    "python": "3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]",
+    "numpy": "2.2.6",
+    "platform": "Linux-5.15.0-181-generic-x86_64-with-glibc2.35"
+  },
+  "timeout_method": "cooperative wall deadline checked at each nonterminal DLX node; process-local method wrapper",
+  "storage": "SQLite WAL; chunk transactions; full keys used for duplicate grouping"
+}

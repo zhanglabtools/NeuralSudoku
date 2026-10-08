@@ -1,0 +1,43 @@
+{
+  "labels": [
+    "seed0",
+    "seed1",
+    "seed2"
+  ],
+  "same_data_seed": true,
+  "same_train_limit": true,
+  "distinct_model_fingerprints": true,
+  "all_models_branch_n": 2024,
+  "all_a_count": 431,
+  "all_b_count": 340,
+  "mixed_branch_count": 1253,
+  "unanimous_rate_given_all_branch": 0.38092885375494073,
+  "mixed_rate_given_all_branch": 0.6190711462450593,
+  "model_a_rates": [
+    0.5363984674329502,
+    0.5256198347107438,
+    0.5306881587104774
+  ],
+  "all_models_significantly_prefer_a": true,
+  "all_models_significantly_prefer_b": false,
+  "pairwise": [
+    {
+      "left": "seed0",
+      "right": "seed1",
+      "comparable_n": 2282,
+      "branch_agreement": 0.5758106923751095
+    },
+    {
+      "left": "seed0",
+      "right": "seed2",
+      "comparable_n": 2440,
+      "branch_agreement": 0.5918032786885246
+    },
+    {
+      "left": "seed1",
+      "right": "seed2",
+      "comparable_n": 2606,
+      "branch_agreement": 0.5997697620874904
+    }
+  ]
+}

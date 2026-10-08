@@ -1,0 +1,6 @@
+method,protocol,external_exact_search,all_exact_percent,D0_r0_exact_percent,D1_0_1_exact_percent,D2_1_2_exact_percent,D3_2_4_exact_percent,D4_4plus_exact_percent,source_id
+SATNet,one differentiable MAXSAT forward,no,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,SATNET_M3_50K
+ABL-Refl,neural reflection plus one MiniSAT call,yes,6.4300,13.0300,5.5500,1.9900,0.4600,0.0600,ABL_REFL_M3_50K
+HRM,internal ACT recurrence,no,68.4000,83.5500,72.3700,63.6700,49.7800,36.6700,HRM_M3_100K
+RRN,single T=64 recurrent inference,no,90.5362,98.8736,96.3920,90.0049,78.3700,64.9702,RRN_M3_T64
+NetSudoku,one initial candidate plus up to 40 reflected candidates,no,99.6512,99.9845,100.0000,99.8151,99.0915,97.0656,NETSUDOKU_M3_LOCKED

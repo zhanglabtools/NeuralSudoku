@@ -1,0 +1,29 @@
+{
+  "solver": "c5",
+  "repeat": 1,
+  "n": 1024,
+  "device": "cpu",
+  "batch_size": 32,
+  "batch_latency": {
+    "n": 32,
+    "mean_seconds": 26.580726068175863,
+    "p50_seconds": 26.337460193783045,
+    "p95_seconds": 29.867912419326604
+  },
+  "single_query_latency": null,
+  "pipeline_seconds": 850.5832341816276,
+  "loop_wall_seconds": 850.5842493996024,
+  "throughput_puzzles_per_second": 1.203879830743692,
+  "valid": 1023,
+  "exact": 1023,
+  "valid_not_exact": 0,
+  "D4_n": 20,
+  "D4_valid": 20,
+  "eligible": true,
+  "timing_context": "cpu-controlled",
+  "memory_scope": "RSS includes runtime/model/host inputs; CUDA peak_allocated includes live model and activations",
+  "peak_process_rss_bytes": 1019072512,
+  "peak_cuda_allocated_bytes": null,
+  "peak_cuda_reserved_bytes": null,
+  "result_sha256": "ba8032b1d5cfa53bbdf3534f38da26ac6122d9ad7a731ed30819b4a879f110ae"
+}

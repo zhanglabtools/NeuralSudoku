@@ -1,0 +1,223 @@
+[data] train=2399047 val=10000 test=300703 cache=data/cache_full_3m.npz
+[model] ABL-Refl GNN d=128 steps=8 msg_hidden=256 C=0.8 th=0.5 device=cuda
+step      1/50000 loss=2.60269 labeled=2.21380 lcon=0.36401 lsize=0.02488 kb=0.08->6.78 delta=6.70 reflected=29.05 retained=0.6425 elapsed=0.6s
+step    500/50000 loss=0.81779 labeled=0.58216 lcon=0.23554 lsize=0.00010 kb=3.53->12.30 delta=8.77 reflected=17.42 retained=0.7915 elapsed=47.5s
+step   1000/50000 loss=0.80208 labeled=0.54603 lcon=0.25542 lsize=0.00063 kb=4.70->14.80 delta=10.09 reflected=18.12 retained=0.7770 elapsed=95.4s
+step   1500/50000 loss=0.72172 labeled=0.47696 lcon=0.24451 lsize=0.00025 kb=5.55->15.14 delta=9.59 reflected=17.45 retained=0.7874 elapsed=142.6s
+step   2000/50000 loss=0.64802 labeled=0.46017 lcon=0.18786 lsize=0.00000 kb=5.52->13.66 delta=8.14 reflected=13.89 retained=0.8241 elapsed=189.3s
+step   2500/50000 loss=0.69264 labeled=0.48129 lcon=0.21130 lsize=0.00004 kb=6.50->15.75 delta=9.25 reflected=16.23 retained=0.8032 elapsed=237.5s
+step   3000/50000 loss=0.76755 labeled=0.50668 lcon=0.26050 lsize=0.00037 kb=5.11->16.25 delta=11.14 reflected=17.11 retained=0.7896 elapsed=284.2s
+step   3500/50000 loss=0.61178 labeled=0.42516 lcon=0.18662 lsize=0.00000 kb=6.94->16.12 delta=9.19 reflected=13.48 retained=0.8312 elapsed=330.9s
+step   4000/50000 loss=0.67816 labeled=0.45190 lcon=0.22623 lsize=0.00003 kb=6.39->16.69 delta=10.30 reflected=15.80 retained=0.8128 elapsed=379.1s
+step   4500/50000 loss=0.63969 labeled=0.42038 lcon=0.21928 lsize=0.00004 kb=6.58->17.12 delta=10.55 reflected=15.58 retained=0.8140 elapsed=425.8s
+step   5000/50000 loss=0.62519 labeled=0.42198 lcon=0.20309 lsize=0.00012 kb=7.14->17.02 delta=9.88 reflected=15.16 retained=0.8113 elapsed=473.2s
+[val] step=5000 raw
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0011  0.0011  1.0000   0.8130   14.449
+rating_0        4379   0.0025  0.0025  1.0000   0.8434   13.029
+rating_0_1       298   0.0000  0.0000  1.0000   0.8260   13.859
+rating_1_2      2650   0.0000  0.0000  1.0000   0.8029   14.928
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7740   16.227
+rating_4_plus    218   0.0000  0.0000  1.0000   0.7479   17.931
+[save] model_abl_refl_paper_v2_full_50k_20260711_best.pt best_val_exact=0.0011
+step   5500/50000 loss=0.65513 labeled=0.42195 lcon=0.23305 lsize=0.00014 kb=5.91->16.81 delta=10.91 reflected=15.67 retained=0.8064 elapsed=526.2s
+step   6000/50000 loss=0.59044 labeled=0.40000 lcon=0.19039 lsize=0.00005 kb=7.47->17.11 delta=9.64 reflected=14.56 retained=0.8187 elapsed=573.1s
+step   6500/50000 loss=0.65562 labeled=0.43394 lcon=0.22148 lsize=0.00020 kb=7.22->17.72 delta=10.50 reflected=16.34 retained=0.8010 elapsed=619.7s
+step   7000/50000 loss=0.62884 labeled=0.40467 lcon=0.22398 lsize=0.00018 kb=6.95->17.77 delta=10.81 reflected=15.84 retained=0.8018 elapsed=667.7s
+step   7500/50000 loss=0.63139 labeled=0.41260 lcon=0.21846 lsize=0.00033 kb=7.64->18.83 delta=11.19 reflected=16.17 retained=0.7932 elapsed=714.3s
+step   8000/50000 loss=0.63713 labeled=0.41409 lcon=0.22299 lsize=0.00004 kb=6.45->17.45 delta=11.00 reflected=14.70 retained=0.8231 elapsed=761.7s
+step   8500/50000 loss=0.61601 labeled=0.38923 lcon=0.22665 lsize=0.00013 kb=6.80->18.20 delta=11.41 reflected=15.64 retained=0.8051 elapsed=809.1s
+step   9000/50000 loss=0.62892 labeled=0.40506 lcon=0.22369 lsize=0.00017 kb=7.02->18.38 delta=11.36 reflected=16.41 retained=0.7978 elapsed=855.9s
+step   9500/50000 loss=0.65966 labeled=0.41804 lcon=0.24104 lsize=0.00057 kb=6.64->18.97 delta=12.33 reflected=16.83 retained=0.7882 elapsed=900.4s
+step  10000/50000 loss=0.62112 labeled=0.39954 lcon=0.22149 lsize=0.00009 kb=6.73->18.20 delta=11.47 reflected=15.55 retained=0.8086 elapsed=935.2s
+[val] step=10000 raw
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0022  0.0022  1.0000   0.8217   14.838
+rating_0        4379   0.0050  0.0050  1.0000   0.8540   13.197
+rating_0_1       298   0.0000  0.0000  1.0000   0.8362   14.081
+rating_1_2      2650   0.0000  0.0000  1.0000   0.8106   15.329
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7806   17.000
+rating_4_plus    218   0.0000  0.0000  1.0000   0.7517   18.523
+[save] model_abl_refl_paper_v2_full_50k_20260711_best.pt best_val_exact=0.0022
+step  10500/50000 loss=0.55060 labeled=0.37871 lcon=0.17189 lsize=0.00000 kb=7.66->17.59 delta=9.94 reflected=13.08 retained=0.8423 elapsed=974.2s
+step  11000/50000 loss=0.67049 labeled=0.41769 lcon=0.25195 lsize=0.00085 kb=7.12->20.48 delta=13.36 reflected=17.88 retained=0.7837 elapsed=1009.0s
+step  11500/50000 loss=0.60271 labeled=0.40064 lcon=0.20186 lsize=0.00021 kb=7.98->19.09 delta=11.11 reflected=15.61 retained=0.8012 elapsed=1043.8s
+step  12000/50000 loss=0.66391 labeled=0.43982 lcon=0.22386 lsize=0.00022 kb=6.12->18.41 delta=12.28 reflected=15.83 retained=0.8004 elapsed=1078.5s
+step  12500/50000 loss=0.64864 labeled=0.42323 lcon=0.22493 lsize=0.00047 kb=7.23->20.03 delta=12.80 reflected=17.22 retained=0.7949 elapsed=1113.4s
+step  13000/50000 loss=0.58599 labeled=0.38656 lcon=0.19938 lsize=0.00005 kb=7.61->19.47 delta=11.86 reflected=14.72 retained=0.8193 elapsed=1148.3s
+step  13500/50000 loss=0.59199 labeled=0.38368 lcon=0.20807 lsize=0.00024 kb=7.69->20.22 delta=12.53 reflected=15.72 retained=0.8001 elapsed=1183.0s
+step  14000/50000 loss=0.55351 labeled=0.36151 lcon=0.19190 lsize=0.00010 kb=8.11->20.48 delta=12.38 reflected=15.44 retained=0.8077 elapsed=1217.8s
+step  14500/50000 loss=0.57134 labeled=0.37940 lcon=0.19190 lsize=0.00004 kb=7.72->19.02 delta=11.30 reflected=14.72 retained=0.8187 elapsed=1252.6s
+step  15000/50000 loss=0.55645 labeled=0.37468 lcon=0.18170 lsize=0.00006 kb=8.22->19.50 delta=11.28 reflected=14.02 retained=0.8217 elapsed=1287.3s
+[val] step=15000 raw
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0042  0.0042  1.0000   0.8271   14.241
+rating_0        4379   0.0091  0.0091  1.0000   0.8609   12.501
+rating_0_1       298   0.0034  0.0034  1.0000   0.8413   13.148
+rating_1_2      2650   0.0000  0.0000  1.0000   0.8141   14.926
+rating_2_4      2455   0.0004  0.0004  1.0000   0.7856   16.396
+rating_4_plus    218   0.0000  0.0000  1.0000   0.7557   18.078
+[save] model_abl_refl_paper_v2_full_50k_20260711_best.pt best_val_exact=0.0042
+step  15500/50000 loss=0.64388 labeled=0.40180 lcon=0.24144 lsize=0.00064 kb=7.05->21.00 delta=13.95 reflected=17.44 retained=0.7885 elapsed=1326.1s
+step  16000/50000 loss=0.57733 labeled=0.37458 lcon=0.20248 lsize=0.00026 kb=7.86->20.75 delta=12.89 reflected=16.22 retained=0.7979 elapsed=1360.9s
+step  16500/50000 loss=0.56354 labeled=0.37365 lcon=0.18973 lsize=0.00017 kb=8.16->19.64 delta=11.48 reflected=15.50 retained=0.8147 elapsed=1395.6s
+step  17000/50000 loss=0.60192 labeled=0.37225 lcon=0.22905 lsize=0.00062 kb=7.27->20.31 delta=13.05 reflected=17.11 retained=0.7910 elapsed=1430.2s
+step  17500/50000 loss=0.55762 labeled=0.38172 lcon=0.17587 lsize=0.00002 kb=7.86->18.56 delta=10.70 reflected=13.14 retained=0.8369 elapsed=1464.8s
+step  18000/50000 loss=0.58562 labeled=0.36672 lcon=0.21840 lsize=0.00050 kb=7.66->20.88 delta=13.22 reflected=17.19 retained=0.7891 elapsed=1499.3s
+step  18500/50000 loss=0.51609 labeled=0.37729 lcon=0.13880 lsize=0.00000 kb=8.42->17.75 delta=9.33 reflected=11.02 retained=0.8658 elapsed=1533.9s
+step  19000/50000 loss=0.60084 labeled=0.38098 lcon=0.21945 lsize=0.00042 kb=7.97->21.70 delta=13.73 reflected=17.23 retained=0.7923 elapsed=1568.5s
+step  19500/50000 loss=0.59221 labeled=0.39199 lcon=0.20011 lsize=0.00011 kb=6.86->18.33 delta=11.47 reflected=15.52 retained=0.8067 elapsed=1602.9s
+step  20000/50000 loss=0.58181 labeled=0.38271 lcon=0.19898 lsize=0.00012 kb=8.17->21.14 delta=12.97 reflected=15.78 retained=0.8078 elapsed=1637.5s
+[val] step=20000 raw
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0062  0.0062  1.0000   0.8323   13.531
+rating_0        4379   0.0137  0.0137  1.0000   0.8673   11.749
+rating_0_1       298   0.0034  0.0034  1.0000   0.8430   12.866
+rating_1_2      2650   0.0004  0.0004  1.0000   0.8191   14.123
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7889   15.806
+rating_4_plus    218   0.0000  0.0000  1.0000   0.7646   17.427
+[save] model_abl_refl_paper_v2_full_50k_20260711_best.pt best_val_exact=0.0062
+step  20500/50000 loss=0.55751 labeled=0.36243 lcon=0.19487 lsize=0.00021 kb=8.08->20.75 delta=12.67 reflected=16.12 retained=0.7997 elapsed=1676.1s
+step  21000/50000 loss=0.56510 labeled=0.36393 lcon=0.20084 lsize=0.00033 kb=8.59->21.42 delta=12.83 reflected=16.19 retained=0.8034 elapsed=1710.6s
+step  21500/50000 loss=0.62167 labeled=0.41034 lcon=0.21104 lsize=0.00028 kb=7.48->20.42 delta=12.94 reflected=15.97 retained=0.8014 elapsed=1745.0s
+step  22000/50000 loss=0.55812 labeled=0.38604 lcon=0.17208 lsize=0.00001 kb=8.16->18.98 delta=10.83 reflected=13.52 retained=0.8294 elapsed=1779.5s
+step  22500/50000 loss=0.61067 labeled=0.40298 lcon=0.20742 lsize=0.00026 kb=7.19->20.20 delta=13.02 reflected=16.78 retained=0.7980 elapsed=1814.1s
+step  23000/50000 loss=0.56831 labeled=0.37058 lcon=0.19769 lsize=0.00005 kb=7.59->19.45 delta=11.86 reflected=15.08 retained=0.8142 elapsed=1848.6s
+step  23500/50000 loss=0.62219 labeled=0.40549 lcon=0.21635 lsize=0.00035 kb=7.28->19.27 delta=11.98 reflected=16.66 retained=0.7926 elapsed=1883.2s
+step  24000/50000 loss=0.60225 labeled=0.39757 lcon=0.20463 lsize=0.00005 kb=7.39->19.73 delta=12.34 reflected=15.48 retained=0.8102 elapsed=1917.7s
+step  24500/50000 loss=0.53875 labeled=0.36055 lcon=0.17819 lsize=0.00001 kb=8.23->20.25 delta=12.02 reflected=14.20 retained=0.8212 elapsed=1952.1s
+step  25000/50000 loss=0.56044 labeled=0.36805 lcon=0.19194 lsize=0.00045 kb=8.67->21.56 delta=12.89 reflected=16.36 retained=0.7943 elapsed=1986.6s
+[val] step=25000 raw
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0054  0.0054  1.0000   0.8370   13.641
+rating_0        4379   0.0116  0.0116  1.0000   0.8720   11.829
+rating_0_1       298   0.0000  0.0000  1.0000   0.8510   13.044
+rating_1_2      2650   0.0011  0.0011  1.0000   0.8238   14.176
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7937   15.997
+rating_4_plus    218   0.0000  0.0000  1.0000   0.7646   17.830
+step  25500/50000 loss=0.54750 labeled=0.36969 lcon=0.17760 lsize=0.00022 kb=9.41->21.67 delta=12.27 reflected=15.67 retained=0.8040 elapsed=2025.3s
+step  26000/50000 loss=0.54311 labeled=0.33806 lcon=0.20475 lsize=0.00031 kb=8.05->21.92 delta=13.88 reflected=16.12 retained=0.7994 elapsed=2059.9s
+step  26500/50000 loss=0.58066 labeled=0.37678 lcon=0.20340 lsize=0.00048 kb=7.91->21.48 delta=13.58 reflected=16.81 retained=0.7914 elapsed=2094.4s
+step  27000/50000 loss=0.60871 labeled=0.39258 lcon=0.21594 lsize=0.00019 kb=7.45->20.56 delta=13.11 reflected=16.33 retained=0.8015 elapsed=2128.9s
+step  27500/50000 loss=0.55003 labeled=0.37786 lcon=0.17212 lsize=0.00005 kb=8.75->20.58 delta=11.83 reflected=14.70 retained=0.8232 elapsed=2163.4s
+step  28000/50000 loss=0.54890 labeled=0.37412 lcon=0.17472 lsize=0.00006 kb=8.12->19.22 delta=11.09 reflected=14.41 retained=0.8184 elapsed=2197.9s
+step  28500/50000 loss=0.59716 labeled=0.36597 lcon=0.23087 lsize=0.00032 kb=7.42->21.84 delta=14.42 reflected=16.88 retained=0.7917 elapsed=2232.4s
+step  29000/50000 loss=0.56828 labeled=0.37548 lcon=0.19274 lsize=0.00006 kb=6.69->18.61 delta=11.92 reflected=14.14 retained=0.8242 elapsed=2266.9s
+step  29500/50000 loss=0.52539 labeled=0.35445 lcon=0.17090 lsize=0.00005 kb=8.27->20.05 delta=11.78 reflected=14.08 retained=0.8228 elapsed=2301.6s
+step  30000/50000 loss=0.59805 labeled=0.38720 lcon=0.21057 lsize=0.00028 kb=7.08->20.02 delta=12.94 reflected=16.41 retained=0.8008 elapsed=2336.0s
+[val] step=30000 raw
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0062  0.0062  1.0000   0.8383   13.518
+rating_0        4379   0.0132  0.0132  1.0000   0.8750   11.567
+rating_0_1       298   0.0067  0.0067  1.0000   0.8475   12.742
+rating_1_2      2650   0.0008  0.0008  1.0000   0.8240   14.247
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7936   15.922
+rating_4_plus    218   0.0000  0.0000  1.0000   0.7671   17.821
+step  30500/50000 loss=0.55693 labeled=0.34735 lcon=0.20901 lsize=0.00057 kb=8.41->22.33 delta=13.92 reflected=16.86 retained=0.7909 elapsed=2374.5s
+step  31000/50000 loss=0.60045 labeled=0.39508 lcon=0.20531 lsize=0.00006 kb=7.05->19.56 delta=12.52 reflected=15.33 retained=0.8117 elapsed=2409.0s
+[val] step=31250 raw
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0067  0.0067  1.0000   0.8390   13.294
+rating_0        4379   0.0148  0.0148  1.0000   0.8759   11.309
+rating_0_1       298   0.0000  0.0000  1.0000   0.8508   12.480
+rating_1_2      2650   0.0008  0.0008  1.0000   0.8246   13.960
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7943   15.779
+rating_4_plus    218   0.0000  0.0000  1.0000   0.7625   18.211
+[save] model_abl_refl_paper_v2_full_50k_20260711_best.pt best_val_exact=0.0067
+[save-milestone] model_abl_refl_paper_v2_full_50k_20260711_best_step31250.pt
+step  31500/50000 loss=0.60196 labeled=0.38545 lcon=0.21599 lsize=0.00051 kb=7.81->21.58 delta=13.77 reflected=17.16 retained=0.7935 elapsed=2447.8s
+step  32000/50000 loss=0.57978 labeled=0.35953 lcon=0.21907 lsize=0.00119 kb=7.69->21.88 delta=14.19 reflected=18.19 retained=0.7784 elapsed=2482.3s
+step  32500/50000 loss=0.49018 labeled=0.32495 lcon=0.16519 lsize=0.00004 kb=9.58->21.45 delta=11.88 reflected=14.28 retained=0.8268 elapsed=2516.8s
+step  33000/50000 loss=0.56958 labeled=0.36657 lcon=0.20240 lsize=0.00061 kb=8.52->22.59 delta=14.08 reflected=16.58 retained=0.7937 elapsed=2551.4s
+step  33500/50000 loss=0.53319 labeled=0.34903 lcon=0.18384 lsize=0.00031 kb=9.00->21.62 delta=12.62 reflected=15.77 retained=0.7987 elapsed=2586.0s
+step  34000/50000 loss=0.61202 labeled=0.37894 lcon=0.23155 lsize=0.00153 kb=7.02->21.70 delta=14.69 reflected=18.59 retained=0.7700 elapsed=2620.5s
+step  34500/50000 loss=0.51256 labeled=0.34249 lcon=0.17006 lsize=0.00001 kb=8.20->19.95 delta=11.75 reflected=13.98 retained=0.8260 elapsed=2655.1s
+step  35000/50000 loss=0.51029 labeled=0.35602 lcon=0.15422 lsize=0.00005 kb=9.14->21.33 delta=12.19 reflected=14.02 retained=0.8253 elapsed=2689.7s
+[val] step=35000 raw
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0069  0.0069  1.0000   0.8407   13.344
+rating_0        4379   0.0151  0.0151  1.0000   0.8774   11.388
+rating_0_1       298   0.0034  0.0034  1.0000   0.8525   12.745
+rating_1_2      2650   0.0008  0.0008  1.0000   0.8265   14.040
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7955   15.734
+rating_4_plus    218   0.0000  0.0000  1.0000   0.7673   18.073
+[save] model_abl_refl_paper_v2_full_50k_20260711_best.pt best_val_exact=0.0069
+step  35500/50000 loss=0.55493 labeled=0.35563 lcon=0.19900 lsize=0.00029 kb=8.61->22.16 delta=13.55 reflected=16.62 retained=0.8007 elapsed=2728.5s
+step  36000/50000 loss=0.57797 labeled=0.38941 lcon=0.18831 lsize=0.00025 kb=8.48->21.11 delta=12.62 reflected=16.16 retained=0.8039 elapsed=2763.2s
+step  36500/50000 loss=0.53741 labeled=0.35734 lcon=0.17980 lsize=0.00026 kb=8.41->22.06 delta=13.66 reflected=16.22 retained=0.7979 elapsed=2797.9s
+step  37000/50000 loss=0.48627 labeled=0.31773 lcon=0.16851 lsize=0.00003 kb=8.88->21.41 delta=12.53 reflected=14.28 retained=0.8259 elapsed=2832.7s
+step  37500/50000 loss=0.50660 labeled=0.34788 lcon=0.15864 lsize=0.00008 kb=9.42->21.59 delta=12.17 reflected=14.23 retained=0.8217 elapsed=2867.6s
+step  38000/50000 loss=0.50651 labeled=0.33701 lcon=0.16939 lsize=0.00011 kb=8.97->21.95 delta=12.98 reflected=14.73 retained=0.8145 elapsed=2902.3s
+step  38500/50000 loss=0.53199 labeled=0.37768 lcon=0.15431 lsize=0.00000 kb=7.86->18.41 delta=10.55 reflected=12.59 retained=0.8453 elapsed=2937.1s
+step  39000/50000 loss=0.53809 labeled=0.34897 lcon=0.18901 lsize=0.00011 kb=8.72->22.38 delta=13.66 reflected=15.17 retained=0.8190 elapsed=2971.7s
+step  39500/50000 loss=0.56021 labeled=0.36988 lcon=0.19019 lsize=0.00015 kb=8.42->21.89 delta=13.47 reflected=15.58 retained=0.8079 elapsed=3006.4s
+step  40000/50000 loss=0.53603 labeled=0.36188 lcon=0.17405 lsize=0.00010 kb=8.53->21.12 delta=12.59 reflected=15.05 retained=0.8093 elapsed=3041.0s
+[val] step=40000 raw
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0072  0.0072  1.0000   0.8425   12.923
+rating_0        4379   0.0158  0.0158  1.0000   0.8794   11.032
+rating_0_1       298   0.0000  0.0000  1.0000   0.8533   12.114
+rating_1_2      2650   0.0011  0.0011  1.0000   0.8281   13.580
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7973   15.295
+rating_4_plus    218   0.0000  0.0000  1.0000   0.7717   17.335
+[save] model_abl_refl_paper_v2_full_50k_20260711_best.pt best_val_exact=0.0072
+step  40500/50000 loss=0.55569 labeled=0.37141 lcon=0.18417 lsize=0.00011 kb=8.67->22.25 delta=13.58 reflected=15.34 retained=0.8105 elapsed=3080.1s
+step  41000/50000 loss=0.52968 labeled=0.33674 lcon=0.19210 lsize=0.00084 kb=8.73->22.41 delta=13.67 reflected=16.98 retained=0.7873 elapsed=3114.7s
+step  41500/50000 loss=0.52286 labeled=0.36012 lcon=0.16265 lsize=0.00010 kb=9.06->21.02 delta=11.95 reflected=14.86 retained=0.8133 elapsed=3149.4s
+step  42000/50000 loss=0.55904 labeled=0.37490 lcon=0.18402 lsize=0.00011 kb=7.75->20.98 delta=13.23 reflected=15.06 retained=0.8109 elapsed=3184.0s
+step  42500/50000 loss=0.50383 labeled=0.33142 lcon=0.17226 lsize=0.00014 kb=8.56->21.09 delta=12.53 reflected=15.92 retained=0.8060 elapsed=3218.6s
+step  43000/50000 loss=0.51802 labeled=0.34291 lcon=0.17459 lsize=0.00052 kb=9.25->23.08 delta=13.83 reflected=16.45 retained=0.7999 elapsed=3253.1s
+step  43500/50000 loss=0.52479 labeled=0.35515 lcon=0.16954 lsize=0.00010 kb=8.33->20.95 delta=12.62 reflected=14.81 retained=0.8162 elapsed=3287.7s
+step  44000/50000 loss=0.51479 labeled=0.32969 lcon=0.18439 lsize=0.00071 kb=9.86->24.75 delta=14.89 reflected=17.22 retained=0.7873 elapsed=3322.1s
+step  44500/50000 loss=0.52187 labeled=0.33616 lcon=0.18547 lsize=0.00025 kb=8.31->22.09 delta=13.78 reflected=15.75 retained=0.8045 elapsed=3356.5s
+step  45000/50000 loss=0.53109 labeled=0.34263 lcon=0.18802 lsize=0.00044 kb=8.64->23.06 delta=14.42 reflected=16.47 retained=0.7921 elapsed=3391.2s
+[val] step=45000 raw
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0090  0.0090  1.0000   0.8448   13.160
+rating_0        4379   0.0201  0.0201  1.0000   0.8824   11.122
+rating_0_1       298   0.0000  0.0000  1.0000   0.8577   12.168
+rating_1_2      2650   0.0008  0.0008  1.0000   0.8290   13.898
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7996   15.709
+rating_4_plus    218   0.0000  0.0000  1.0000   0.7721   17.771
+[save] model_abl_refl_paper_v2_full_50k_20260711_best.pt best_val_exact=0.0090
+step  45500/50000 loss=0.54997 labeled=0.35682 lcon=0.19295 lsize=0.00021 kb=8.12->21.88 delta=13.75 reflected=16.00 retained=0.8031 elapsed=3429.8s
+step  46000/50000 loss=0.54449 labeled=0.35829 lcon=0.18610 lsize=0.00010 kb=8.36->21.34 delta=12.98 reflected=15.08 retained=0.8126 elapsed=3464.3s
+step  46500/50000 loss=0.51843 labeled=0.33449 lcon=0.18350 lsize=0.00044 kb=8.42->22.53 delta=14.11 reflected=16.48 retained=0.7980 elapsed=3498.8s
+step  47000/50000 loss=0.48994 labeled=0.34408 lcon=0.14583 lsize=0.00003 kb=8.72->20.36 delta=11.64 reflected=13.44 retained=0.8320 elapsed=3533.2s
+step  47500/50000 loss=0.55115 labeled=0.35216 lcon=0.19840 lsize=0.00060 kb=7.94->20.83 delta=12.89 reflected=16.52 retained=0.7912 elapsed=3567.7s
+step  48000/50000 loss=0.53317 labeled=0.34786 lcon=0.18515 lsize=0.00016 kb=8.86->22.56 delta=13.70 reflected=15.98 retained=0.8048 elapsed=3602.2s
+step  48500/50000 loss=0.55519 labeled=0.37094 lcon=0.18412 lsize=0.00013 kb=7.28->20.02 delta=12.73 reflected=15.50 retained=0.8088 elapsed=3636.9s
+step  49000/50000 loss=0.53327 labeled=0.36928 lcon=0.16391 lsize=0.00009 kb=8.77->20.61 delta=11.84 reflected=14.88 retained=0.8131 elapsed=3671.4s
+step  49500/50000 loss=0.54970 labeled=0.35889 lcon=0.19033 lsize=0.00049 kb=8.72->23.08 delta=14.36 reflected=16.62 retained=0.7987 elapsed=3705.9s
+step  50000/50000 loss=0.50105 labeled=0.31803 lcon=0.18260 lsize=0.00042 kb=9.78->24.06 delta=14.28 reflected=16.61 retained=0.7978 elapsed=3740.4s
+[val] step=50000 raw
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all            10000   0.0088  0.0088  1.0000   0.8455   13.232
+rating_0        4379   0.0192  0.0192  1.0000   0.8837   11.105
+rating_0_1       298   0.0034  0.0034  1.0000   0.8574   12.409
+rating_1_2      2650   0.0011  0.0011  1.0000   0.8307   14.103
+rating_2_4      2455   0.0000  0.0000  1.0000   0.7982   15.776
+rating_4_plus    218   0.0000  0.0000  1.0000   0.7731   17.867
+[save-final] checkpoints/model_abl_refl_paper_v2_full_50k_20260711_final.pt
+[progress] seen=50000 elapsed=186.9s rate=267.51/s
+[progress] seen=100000 elapsed=373.2s rate=267.94/s
+[progress] seen=150000 elapsed=559.6s rate=268.03/s
+[progress] seen=200000 elapsed=746.8s rate=267.82/s
+[progress] seen=250000 elapsed=933.1s rate=267.91/s
+[progress] seen=300000 elapsed=1119.7s rate=267.93/s
+[test] final raw
+bucket          n      exact   valid   clue_ok cell_acc avg_viol
+all           300703   0.0078  0.0078  1.0000   0.8446   13.282
+rating_0      129436   0.0176  0.0176  1.0000   0.8837   11.187
+rating_0_1      9285   0.0019  0.0019  1.0000   0.8600   12.255
+rating_1_2     79489   0.0007  0.0007  1.0000   0.8295   14.059
+rating_2_4     75950   0.0000  0.0000  1.0000   0.7983   15.804
+rating_4_plus   6543   0.0000  0.0000  1.0000   0.7729   17.474
+[test] final repair(th=0.5)
+bucket          n      exact   valid   clue_ok cell_acc avg_viol solved  unsat avg_refl avg_kept repair_s
+all           300703   0.0643  0.0643  1.0000   0.8473   12.890 0.0643 0.9357    15.64    41.06   0.0031
+rating_0      129436   0.1303  0.1303  1.0000   0.8887   10.434 0.1303 0.8697    15.46    41.30   0.0032
+rating_0_1      9285   0.0555  0.0555  1.0000   0.8632   11.817 0.0555 0.9445    16.00    40.64   0.0031
+rating_1_2     79489   0.0199  0.0199  1.0000   0.8307   13.893 0.0199 0.9801    16.02    40.61   0.0031
+rating_2_4     75950   0.0046  0.0046  1.0000   0.7986   15.763 0.0046 0.9954    15.54    41.10   0.0031
+rating_4_plus   6543   0.0006  0.0006  1.0000   0.7729   17.467 0.0006 0.9994    14.94    41.87   0.0031

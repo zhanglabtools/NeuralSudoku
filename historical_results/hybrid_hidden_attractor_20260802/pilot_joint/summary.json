@@ -1,0 +1,51 @@
+{
+  "checkpoint": "historical_results/hybrid_multiseed_two_solution_20260802/models/hybrid_seed0_1m_s10000_final.pt",
+  "checkpoint_step": 10000,
+  "cfg": {
+    "model_type": "hybrid",
+    "D": 128,
+    "train_T": 32,
+    "eval_T": 64,
+    "msg_hidden": 256,
+    "dropout": 0.0,
+    "force_clues": true,
+    "hybrid_gate_bias": -2.0
+  },
+  "dataset": "historical_results/hybrid_c5_two_solution_20260801/two_solution_test_n4096.npz",
+  "baseline_details": "historical_results/hybrid_multiseed_two_solution_20260802/eval/seed0_details.npz",
+  "selected_n": 96,
+  "selected_baseline_a": 48,
+  "selected_baseline_b": 48,
+  "times": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56
+  ],
+  "sigmas": [
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1.0
+  ],
+  "targets": [
+    "joint"
+  ],
+  "repeats": 32,
+  "total_steps": 64,
+  "conditions": 3840,
+  "total_trials": 122880,
+  "total_a": 59670,
+  "total_b": 60381,
+  "total_invalid": 2829,
+  "total_other_valid": 0,
+  "valid_ab_rate": 0.9769775390625,
+  "dual_branch_puzzles": 95,
+  "dual_branch_rate": 0.9895833333333334,
+  "seed": 20260802
+}

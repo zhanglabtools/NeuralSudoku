@@ -1,0 +1,37 @@
+{
+  "label": "seed1",
+  "checkpoint": "historical_results/hybrid_multiseed_two_solution_20260802/models/hybrid_seed1_1m_s10000_final.pt",
+  "checkpoint_step": 10000,
+  "seed": 1,
+  "data_seed": 0,
+  "train_limit": 1000000,
+  "steps_trained": 10000,
+  "cfg": {
+    "model_type": "hybrid",
+    "D": 128,
+    "train_T": 32,
+    "eval_T": 64,
+    "msg_hidden": 256,
+    "dropout": 0.0,
+    "force_clues": true,
+    "hybrid_gate_bias": -2.0
+  },
+  "model_fingerprint": "3b350a31f4a29665451f36e4ab1668a5660d3dae14bece6af192d2137511b904",
+  "metrics": {
+    "n": 4096,
+    "valid": 0.738525390625,
+    "a_count": 1590,
+    "b_count": 1435,
+    "invalid_count": 1071,
+    "other_valid_count": 0,
+    "a_given_branch": 0.5256198347107438,
+    "a_given_branch_ci": [
+      0.5076425611605648,
+      0.5435475046584745
+    ],
+    "a_vs_half_exact_p": 0.005101906815343622,
+    "mean_a_minus_b_log_margin": 2.1220223903656006,
+    "median_a_minus_b_log_margin": 0.3658592700958252,
+    "branch_n": 3025
+  }
+}

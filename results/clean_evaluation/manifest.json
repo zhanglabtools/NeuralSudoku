@@ -1,0 +1,62 @@
+{
+  "witnesses": [
+    {
+      "left_global_index": 240822,
+      "right_global_index": 582628,
+      "left_split": 2,
+      "right_split": 0,
+      "left_rating": 1.399999976158142,
+      "right_rating": 1.2000000476837158,
+      "transpose": false,
+      "row_oriented_mapping": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "column_oriented_mapping": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "digit_mapping_1_to_9": [
+        3,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "puzzle_transform_exactly_verified": true
+    }
+  ],
+  "original_test_count": 300703,
+  "clean_test_count": 300702,
+  "excluded_test_global_ids": [
+    240822
+  ],
+  "excluded_test_split_positions": [
+    23966
+  ],
+  "excluded_ratings": [
+    1.399999976158142
+  ],
+  "original_d4_count": 6543,
+  "clean_d4_count": 6543,
+  "rule": "Exclude test rows equivalent under the standard Sudoku group to any train or validation row; independent of model results. Preserve original cache and training/validation sets.",
+  "clean_test_global_ids_sha256": "1b4dce4a37fb0008378c3d8ecd8e3bc54b867d2252360e74634cabae0a98fe6d"
+}

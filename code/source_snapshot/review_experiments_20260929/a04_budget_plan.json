@@ -1,0 +1,16 @@
+{
+  "protocol": "a04_budget_v1",
+  "parent_steps": 64,
+  "noise_normalization": "selected_state_rms",
+  "noise_support": "empty_cell_hidden_and_all_unit_hidden",
+  "noise_timing": "once_before_each_recovery_cycle",
+  "sigmas": [0.03, 0.1, 0.3],
+  "random_repeats": 3,
+  "schedules": [
+    {"name": "K1_C5_R8", "slots": 1, "cycles": 5, "recovery_steps": 8},
+    {"name": "K4_C5_R8", "slots": 4, "cycles": 5, "recovery_steps": 8},
+    {"name": "K8_C3_R8", "slots": 8, "cycles": 3, "recovery_steps": 8},
+    {"name": "K8_C5_R4", "slots": 8, "cycles": 5, "recovery_steps": 4},
+    {"name": "K8_C5_R8", "slots": 8, "cycles": 5, "recovery_steps": 8}
+  ]
+}

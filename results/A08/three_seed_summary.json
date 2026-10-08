@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "systems": 3,
+  "summary": [
+    {
+      "bucket": "all",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "exact_rates": [
+        0.996524798637854,
+        0.994878650624206,
+        0.9979414835950542
+      ],
+      "mean": 0.9964483109523714,
+      "sample_std": 0.0015328484029255999
+    },
+    {
+      "bucket": "D4",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "exact_rates": [
+        0.9714198379948036,
+        0.959651535992664,
+        0.9790615925416476
+      ],
+      "mean": 0.9700443221763716,
+      "sample_std": 0.009777863091379064
+    }
+  ],
+  "independence": "Each seed has its own A07 joint backbone, split0 failure pool and randomly initialized reflector; shared A07 backbone cost counted once."
+}

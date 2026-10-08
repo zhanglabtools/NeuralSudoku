@@ -1,0 +1,190 @@
+{
+  "status": "complete",
+  "checkpoint_sha256": "6c43b0844c7d1171eb5988e279e846a6056cc82cfa19ae110654b04cd72a7db6",
+  "evaluations": [
+    {
+      "steps": 64,
+      "summary": "results/A04/rrn_budget/model_rrn_paper_d128_t32_eval64_50k_20260610_6c43b084/T64/summary.json",
+      "summary_sha256": "cbe0105401389e524a2bbb8a8c942e49a1f680c1fc107925f18f931da5e8b1b7",
+      "per_puzzle": "results/A04/rrn_budget/model_rrn_paper_d128_t32_eval64_50k_20260610_6c43b084/T64/per_puzzle.npz",
+      "metrics": [
+        {
+          "bucket": "all",
+          "n": 6543,
+          "exact_count": 4251,
+          "exact_rate": 0.6497019715726731,
+          "valid_count": 4251,
+          "valid_rate": 0.6497019715726731,
+          "clue_ok_count": 6543,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 4251,
+          "grid_valid_ignoring_clues_rate": 0.6497019715726731,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9058498102769335
+        },
+        {
+          "bucket": "rating_4_plus",
+          "n": 6543,
+          "exact_count": 4251,
+          "exact_rate": 0.6497019715726731,
+          "valid_count": 4251,
+          "valid_rate": 0.6497019715726731,
+          "clue_ok_count": 6543,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 4251,
+          "grid_valid_ignoring_clues_rate": 0.6497019715726731,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9058498102769335
+        }
+      ]
+    },
+    {
+      "steps": 128,
+      "summary": "results/A04/rrn_budget/model_rrn_paper_d128_t32_eval64_50k_20260610_6c43b084/T128/summary.json",
+      "summary_sha256": "ba5ed1b90ceac6049926550ebeb80edecd21feb5c80f895121eef82e42099859",
+      "per_puzzle": "results/A04/rrn_budget/model_rrn_paper_d128_t32_eval64_50k_20260610_6c43b084/T128/per_puzzle.npz",
+      "metrics": [
+        {
+          "bucket": "all",
+          "n": 6543,
+          "exact_count": 4834,
+          "exact_rate": 0.7388048295888736,
+          "valid_count": 4834,
+          "valid_rate": 0.7388048295888736,
+          "clue_ok_count": 6543,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 4834,
+          "grid_valid_ignoring_clues_rate": 0.7388048295888736,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9247504165227941
+        },
+        {
+          "bucket": "rating_4_plus",
+          "n": 6543,
+          "exact_count": 4834,
+          "exact_rate": 0.7388048295888736,
+          "valid_count": 4834,
+          "valid_rate": 0.7388048295888736,
+          "clue_ok_count": 6543,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 4834,
+          "grid_valid_ignoring_clues_rate": 0.7388048295888736,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9247504165227941
+        }
+      ]
+    },
+    {
+      "steps": 256,
+      "summary": "results/A04/rrn_budget/model_rrn_paper_d128_t32_eval64_50k_20260610_6c43b084/T256/summary.json",
+      "summary_sha256": "2d651878d292f8320af3bf268f4ce1f9b9f0bd861912a10b2ce26a52ec9e0dba",
+      "per_puzzle": "results/A04/rrn_budget/model_rrn_paper_d128_t32_eval64_50k_20260610_6c43b084/T256/per_puzzle.npz",
+      "metrics": [
+        {
+          "bucket": "all",
+          "n": 6543,
+          "exact_count": 4962,
+          "exact_rate": 0.7583677212287941,
+          "valid_count": 4962,
+          "valid_rate": 0.7583677212287941,
+          "clue_ok_count": 6543,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 4962,
+          "grid_valid_ignoring_clues_rate": 0.7583677212287941,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.921688054145133
+        },
+        {
+          "bucket": "rating_4_plus",
+          "n": 6543,
+          "exact_count": 4962,
+          "exact_rate": 0.7583677212287941,
+          "valid_count": 4962,
+          "valid_rate": 0.7583677212287941,
+          "clue_ok_count": 6543,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 4962,
+          "grid_valid_ignoring_clues_rate": 0.7583677212287941,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.921688054145133
+        }
+      ]
+    },
+    {
+      "steps": 384,
+      "summary": "results/A04/rrn_budget/model_rrn_paper_d128_t32_eval64_50k_20260610_6c43b084/T384/summary.json",
+      "summary_sha256": "a934c85a2ee53cbf2856b0bf25248695c53e9359f835558775e39c0aba7332c5",
+      "per_puzzle": "results/A04/rrn_budget/model_rrn_paper_d128_t32_eval64_50k_20260610_6c43b084/T384/per_puzzle.npz",
+      "metrics": [
+        {
+          "bucket": "all",
+          "n": 6543,
+          "exact_count": 4977,
+          "exact_rate": 0.7606602475928473,
+          "valid_count": 4977,
+          "valid_rate": 0.7606602475928473,
+          "clue_ok_count": 6543,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 4977,
+          "grid_valid_ignoring_clues_rate": 0.7606602475928473,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.901389289845146
+        },
+        {
+          "bucket": "rating_4_plus",
+          "n": 6543,
+          "exact_count": 4977,
+          "exact_rate": 0.7606602475928473,
+          "valid_count": 4977,
+          "valid_rate": 0.7606602475928473,
+          "clue_ok_count": 6543,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 4977,
+          "grid_valid_ignoring_clues_rate": 0.7606602475928473,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.901389289845146
+        }
+      ]
+    }
+  ],
+  "signature": {
+    "args": {
+      "checkpoints": [
+        "checkpoints/model_rrn_paper_d128_t32_eval64_50k_20260610.pt"
+      ],
+      "cache_path": "data/cache_full_3m.npz",
+      "output_dir": "results/A04/rrn_budget",
+      "steps": [
+        64,
+        128,
+        256,
+        384
+      ],
+      "split": 2,
+      "test_global_ids": "results/clean_evaluation/test_global_ids.npy",
+      "rating_min_exclusive": 4.0,
+      "offset": 0,
+      "limit": 0,
+      "batch_size": 128,
+      "device": "cuda",
+      "warmup": 2,
+      "timing_samples": 0,
+      "threads": 1,
+      "seed": 20260929,
+      "readout_protocol": "common_final"
+    },
+    "checkpoint_sha256": "6c43b0844c7d1171eb5988e279e846a6056cc82cfa19ae110654b04cd72a7db6",
+    "cache_sha256": "98406b669a81a0f2f3a2df2230e23ee67793c46df91e85fe707129c3da7159bd",
+    "test_manifest_sha256": "824e4450ae41bdd32b41341cecbb90c6744f971a14524e01415e347913ffcde6",
+    "calibration_sha256": null,
+    "source_sha256": {
+      "e2_eval_task.py": "f3f9a458b950dd980a3199b3a7720fd4f49c0ebbb6cd8454fa6a30f92f3f1ab4",
+      "e2_eval_checkpoints.py": "8f14886e4143508e63b57cfb498420d5b8399d2c5dafbf983e6b81b18a0820ab",
+      "e2_rollout.py": "70270eb21b72d9a953aa8c18af9755f14d05ca1fa806e49cd604db8cbea58287",
+      "e2_metrics.py": "9f8b37ca2bae31278df223cce842b95b78cfa68075f9aadb54c35cf85a51f4c4",
+      "e2_architectures.py": "ef9440e1b307adca29607c3275e6345aed77fbda2d4ecfd53536c656ccc99fde"
+    },
+    "expected_n": 6543
+  },
+  "seed": 20260929
+}

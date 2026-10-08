@@ -1,0 +1,9 @@
+# Dataset symmetry, exact SAT baseline, CPU benchmarking, and HRM adapters.
+# Native SATNet is built separately from source_snapshot/external/SATNet-master.
+pynauty
+python-sat
+psutil
+adam-atan2
+einops
+pydantic
+tqdm

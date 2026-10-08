@@ -1,0 +1,70 @@
+{
+  "dataset_rows": 3000000,
+  "static_audited_rows": 3000000,
+  "static_complete": true,
+  "split_counts": {
+    "0": 2399047,
+    "1": 300250,
+    "2": 300703
+  },
+  "row_flag_combinations": {},
+  "seed_candidates": [
+    {
+      "seed": 0,
+      "checked": 3000000,
+      "mismatches": 0,
+      "matches_all_audited_rows": true
+    },
+    {
+      "seed": 1,
+      "checked": 3000000,
+      "mismatches": 1020220,
+      "matches_all_audited_rows": false
+    },
+    {
+      "seed": 42,
+      "checked": 3000000,
+      "mismatches": 1020838,
+      "matches_all_audited_rows": false
+    }
+  ],
+  "duplicates": {
+    "exact_keys": {
+      "duplicate_groups": 0,
+      "rows_in_duplicate_groups": 0,
+      "cross_split_groups": 0,
+      "rows_in_cross_split_groups": 0
+    },
+    "digit_keys": {
+      "duplicate_groups": 1,
+      "rows_in_duplicate_groups": 2,
+      "cross_split_groups": 1,
+      "rows_in_cross_split_groups": 2
+    }
+  },
+  "exact_duplicate_groups_with_disagreeing_labels": 0,
+  "uniqueness": {
+    "test_split": 2,
+    "expected_rows": 300703,
+    "audited_rows": 300703,
+    "pending_rows": 0,
+    "status_counts": {
+      "unique": 300703
+    },
+    "all_test_rows_certified_unique": true
+  },
+  "symmetry_coverage": {
+    "exact_puzzle": "complete",
+    "digit_relabeling_S9": "complete",
+    "full_sudoku_symmetry_group": "NOT AUDITED",
+    "warning": "Digit-normalized duplicates are a subset of full Sudoku symmetry equivalence; zero matches do not exclude row/column/band/stack/transpose leakage."
+  },
+  "scoring_contract": {
+    "valid": "complete Sudoku rules AND all original clues preserved",
+    "exact": "all 81 predicted digits equal the supplied target",
+    "other_legal_completion": "valid=1, exact=0; do not reject it as an invalid Sudoku solution",
+    "unsolved_output": "valid=0, exact=0; denominator includes every test puzzle",
+    "budget_exhaustion": "UNSOLVED, never proof of UNSAT",
+    "uniqueness_timeout_or_node_limit": "UNKNOWN, never a uniqueness certificate"
+  }
+}

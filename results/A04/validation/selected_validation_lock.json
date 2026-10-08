@@ -1,0 +1,95 @@
+{
+  "protocol": "a04_budget_v1",
+  "phase": "validation",
+  "smoke_only": false,
+  "checkpoint_sha256": "fabdc1f44ce3e2510a30972ccff6abe220dc7b057f97eac711cd7f67451453d5",
+  "source_sha256": {
+    "code/source_snapshot/eval_hybrid_hyper_rrn_restarts.py": "ddc01b641642658980691a1d864a59c2ed1e13699a2dbdb5e8bcb6f3f433c230",
+    "code/source_snapshot/eval_iterative_hyper_reflection.py": "a5e8f4ae34e7fbd22edcf3c6d5ef7c899eeb19e2765148de4681622da4f70aff",
+    "code/source_snapshot/eval_symbolic_active_reflection.py": "f86348311bf637fca7745cfcde1340bdb1287d3a58760f8bc978d6bf813f61ea",
+    "code/source_snapshot/hybrid_c5_explainability_pilot.py": "2816aeab01e25b1b112cc8728f80bc8d8367e0b8fc4af05bfa50496f6228ccfc",
+    "code/source_snapshot/kaggle_sudoku_experiment.py": "146f4d4a8b11c47623b68d45d3200b917c28f42db1198feaa419ad1630adb76b",
+    "code/source_snapshot/kaggle_sudoku_hyper_rrn_experiment.py": "2a0c5e71c95d5ade76fb26c6239ea12423881c64bbb87d832b3ee0b19bc0b98b",
+    "code/source_snapshot/kaggle_sudoku_rrn_paper_experiment.py": "1a5c9844903723e57b613b7bd4d421071ce0023d0e7c5be8b0b0ce5f55941afb",
+    "code/source_snapshot/review_experiments_20260929/eval_d4_reflection_ablation.py": "3ad2b8e04952c4e6d5120dff3887d54fbb0c64fd67b16ca8b128b77a690c6781",
+    "code/source_snapshot/sudoku_cache_utils.py": "adbd3d5e5b77e726c560f64d8f886a1cc8d1c96d76c128c4905a4a990790c4bf",
+    "code/source_snapshot/sudoku_exchange_experiment.py": "398848894dc35a2fc2b21626179808f89e42e34671e6e19b247880ebf13f97d1",
+    "code/source_snapshot/train_iterative_hyper_reflection.py": "342ee95297cd18d60cbb54792cf1da15bbcd22e681a4116be64056141c8d46fd",
+    "code/source_snapshot/train_symbolic_primal_dual_reflection.py": "e9fe7930c33867246a00ec0f61fc6e653e32b35d74ca06bf5885734d7df76dcf",
+    "code/source_snapshot/review_experiments_20260929/eval_c5_random_budget.py": "5284ee6455986888b2aae273d6eb0836e0c8410c5eeea54c5e5d3e0bf264be4b"
+  },
+  "selection": "d4",
+  "seed": 20260929,
+  "batch_size": 32,
+  "plan": {
+    "protocol": "a04_budget_v1",
+    "parent_steps": 64,
+    "noise_normalization": "selected_state_rms",
+    "noise_support": "empty_cell_hidden_and_all_unit_hidden",
+    "noise_timing": "once_before_each_recovery_cycle",
+    "sigmas": [
+      0.03,
+      0.1,
+      0.3
+    ],
+    "random_repeats": 3,
+    "schedules": [
+      {
+        "name": "K1_C5_R8",
+        "slots": 1,
+        "cycles": 5,
+        "recovery_steps": 8
+      },
+      {
+        "name": "K4_C5_R8",
+        "slots": 4,
+        "cycles": 5,
+        "recovery_steps": 8
+      },
+      {
+        "name": "K8_C3_R8",
+        "slots": 8,
+        "cycles": 3,
+        "recovery_steps": 8
+      },
+      {
+        "name": "K8_C5_R4",
+        "slots": 8,
+        "cycles": 5,
+        "recovery_steps": 4
+      },
+      {
+        "name": "K8_C5_R8",
+        "slots": 8,
+        "cycles": 5,
+        "recovery_steps": 8
+      }
+    ]
+  },
+  "selection_rule": "highest validation mean selected Exact across noise repeats; ties choose smaller sigma",
+  "selected_sigma_by_schedule": {
+    "K1_C5_R8": 0.03,
+    "K4_C5_R8": 0.1,
+    "K8_C3_R8": 0.1,
+    "K8_C5_R4": 0.1,
+    "K8_C5_R8": 0.1
+  },
+  "validation_artifacts": [
+    {
+      "file": "metadata.json",
+      "sha256": "7bba9352cb8274b82c5707a77517c0de423a0fca3d38df627b45526b98544df3"
+    },
+    {
+      "file": "summary.json",
+      "sha256": "31bf101be041852ec80f561f5cb6a183a00d7312d3a6a1c30c69131a24629edc"
+    },
+    {
+      "file": "condition_summary.csv",
+      "sha256": "f8e06f18dd9f36185f74f9c9dfed2c1d9a39aba5645bfc60afd86314686aa98c"
+    },
+    {
+      "file": "locked_selection.npz",
+      "sha256": "079efa8597ff1c9452a0bbe741d94aac94a0b2e9a10e867517d1b6effad030aa"
+    }
+  ]
+}

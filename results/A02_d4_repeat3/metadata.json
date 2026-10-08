@@ -1,0 +1,170 @@
+{
+  "status": "complete",
+  "args": {
+    "checkpoint": "historical_results/c5_random_init_comparison_20260729/random_c5_hybrid_failures_s10000_seed20260729_best.pt",
+    "cache_path": "data/cache_full_3m.npz",
+    "output_dir": "results/A02_d4_repeat3",
+    "expected_checkpoint_sha256": "fabdc1f44ce3e2510a30972ccff6abe220dc7b057f97eac711cd7f67451453d5",
+    "expected_selection_sha256": "",
+    "expected_count": 6543,
+    "selection": "d4",
+    "limit": 0,
+    "batch_size": 32,
+    "repeats": 3,
+    "seed": 20260813,
+    "device": "cuda",
+    "runners": "original,standalone_dynamic,shared",
+    "determinism": "off",
+    "tf32": "off",
+    "reference_details": [],
+    "progress_every": 512
+  },
+  "checkpoint_sha256": "fabdc1f44ce3e2510a30972ccff6abe220dc7b057f97eac711cd7f67451453d5",
+  "base_checkpoint": "checkpoints/model_hybrid_hyper_rrn_d128_t32_eval64_50k_20260717_best.pt",
+  "base_checkpoint_sha256": "c8237a707e343c30d997d9e3976be0c6b37ee5ca79d90fe37aabec911c03b993",
+  "checkpoint_step": 10000,
+  "reflection_cfg": {
+    "mode": "global8",
+    "D": 128,
+    "hidden": 256,
+    "slots": 8,
+    "cycles": 5,
+    "recovery_steps": 8,
+    "parent_steps": 64,
+    "correction_scale": 0.35,
+    "unit_correction_scale": 0.25,
+    "local_tau": 0.75,
+    "dropout": 0.0,
+    "max_slots": 8,
+    "dual_decay": 0.8,
+    "symbolic_cell_scale": 0.2,
+    "symbolic_unit_scale": 0.15,
+    "attention_floor": 0.25,
+    "attention_cap": 4.0,
+    "variant": "primal_dual"
+  },
+  "source_sha256": {
+    "eval_clue_hidden_state_ablation.py": "be492bdf3199df0c5332715c6be4cd7d5b131f2a5a3942397ea101573bf7a6e0",
+    "code/source_snapshot/eval_hybrid_hyper_rrn_restarts.py": "ddc01b641642658980691a1d864a59c2ed1e13699a2dbdb5e8bcb6f3f433c230",
+    "code/source_snapshot/eval_iterative_hyper_reflection.py": "a5e8f4ae34e7fbd22edcf3c6d5ef7c899eeb19e2765148de4681622da4f70aff",
+    "code/source_snapshot/eval_symbolic_active_reflection.py": "f86348311bf637fca7745cfcde1340bdb1287d3a58760f8bc978d6bf813f61ea",
+    "code/source_snapshot/kaggle_sudoku_experiment.py": "146f4d4a8b11c47623b68d45d3200b917c28f42db1198feaa419ad1630adb76b",
+    "code/source_snapshot/kaggle_sudoku_hyper_rrn_experiment.py": "2a0c5e71c95d5ade76fb26c6239ea12423881c64bbb87d832b3ee0b19bc0b98b",
+    "code/source_snapshot/kaggle_sudoku_rrn_paper_experiment.py": "1a5c9844903723e57b613b7bd4d421071ce0023d0e7c5be8b0b0ce5f55941afb",
+    "eval_d4_runner_audit.py": "ea755701e5b5d1e505bdb68c85a2a62bf477dba3a4ddfd1410d3a740b6095483",
+    "code/source_snapshot/sudoku_cache_utils.py": "adbd3d5e5b77e726c560f64d8f886a1cc8d1c96d76c128c4905a4a990790c4bf",
+    "code/source_snapshot/sudoku_exchange_experiment.py": "398848894dc35a2fc2b21626179808f89e42e34671e6e19b247880ebf13f97d1",
+    "code/source_snapshot/train_iterative_hyper_reflection.py": "342ee95297cd18d60cbb54792cf1da15bbcd22e681a4116be64056141c8d46fd",
+    "code/source_snapshot/train_symbolic_primal_dual_reflection.py": "e9fe7930c33867246a00ec0f61fc6e653e32b35d74ca06bf5885734d7df76dcf"
+  },
+  "data": {
+    "split": "test",
+    "selection": "d4",
+    "pre_limit_count": 6543,
+    "selected_count": 6543,
+    "D4_count": 6543,
+    "order": "ascending test-split position; no reshuffling",
+    "split_ids_sha256": "14f5a79834b4de3668667437cf769ea72981d30147d75b94a363cf64bd09bfb0",
+    "selected_positions_sha256": "781881e8cb0bfe82ff2370ee6071be205780e3e51a333166c0cec9f58ae34cf5",
+    "selected_raw_ids_sha256": "49b646f74225b877a181f4a78fe946766f04798c782796dffa65101850093e80",
+    "puzzles_sha256": "3c42d7113bc56cc674b4c01ff98e38bdbda6027ac0a84a9d97d1cc1828f28012",
+    "solutions_sha256": "a0c0b8803e43cc018a36664a55bc22bfda2239f50784c290006d7833ada21c44",
+    "ratings_sha256": "1a9745f02e01787a127781696316210b61460d969c3092cab292cc425cfe445c"
+  },
+  "selection_sha256": "84ec8677ebb5ba1935943a3fa359792324cebeb5120304b653a798af13de25bc",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "cudnn": 91002,
+  "device": "cuda",
+  "gpu": "NVIDIA L40",
+  "parameter_dtypes": [
+    "torch.float32"
+  ],
+  "amp": false,
+  "tf32_matmul": false,
+  "tf32_cudnn": false,
+  "matmul_precision": "highest",
+  "deterministic_algorithms": false,
+  "cublas_workspace_config": null,
+  "metric": "Valid at first accepted cycle/first valid slot; Exact compares that selected candidate to target.",
+  "repeat_seed_rule": "Same seed reset before each runner and repeat; repeats probe execution variability.",
+  "runner_order_rule": "Reverse requested runner order on odd repeat indices.",
+  "runs": [
+    {
+      "repeat": 0,
+      "runner": "original",
+      "elapsed_seconds": 44.33044169843197,
+      "shared_fork_checked": 0,
+      "shared_fork_applicable": 0,
+      "elapsed_scope": "single runner"
+    },
+    {
+      "repeat": 0,
+      "runner": "standalone_dynamic",
+      "elapsed_seconds": 45.209031431004405,
+      "shared_fork_checked": 0,
+      "shared_fork_applicable": 0,
+      "elapsed_scope": "single runner"
+    },
+    {
+      "repeat": 0,
+      "runner": "shared",
+      "elapsed_seconds": 75.20053320378065,
+      "shared_fork_checked": 205,
+      "shared_fork_applicable": 205,
+      "elapsed_scope": "both arms"
+    },
+    {
+      "repeat": 1,
+      "runner": "shared",
+      "elapsed_seconds": 75.72357929870486,
+      "shared_fork_checked": 205,
+      "shared_fork_applicable": 205,
+      "elapsed_scope": "both arms"
+    },
+    {
+      "repeat": 1,
+      "runner": "standalone_dynamic",
+      "elapsed_seconds": 46.248894806951284,
+      "shared_fork_checked": 0,
+      "shared_fork_applicable": 0,
+      "elapsed_scope": "single runner"
+    },
+    {
+      "repeat": 1,
+      "runner": "original",
+      "elapsed_seconds": 46.12538470886648,
+      "shared_fork_checked": 0,
+      "shared_fork_applicable": 0,
+      "elapsed_scope": "single runner"
+    },
+    {
+      "repeat": 2,
+      "runner": "original",
+      "elapsed_seconds": 46.046949589625,
+      "shared_fork_checked": 0,
+      "shared_fork_applicable": 0,
+      "elapsed_scope": "single runner"
+    },
+    {
+      "repeat": 2,
+      "runner": "standalone_dynamic",
+      "elapsed_seconds": 46.175957480445504,
+      "shared_fork_checked": 0,
+      "shared_fork_applicable": 0,
+      "elapsed_scope": "single runner"
+    },
+    {
+      "repeat": 2,
+      "runner": "shared",
+      "elapsed_seconds": 75.72012587450445,
+      "shared_fork_checked": 205,
+      "shared_fork_applicable": 205,
+      "elapsed_scope": "both arms"
+    }
+  ],
+  "references": [],
+  "disagreement_rows": 4232
+}

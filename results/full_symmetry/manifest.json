@@ -1,0 +1,17 @@
+{
+  "cache_path": "data/cache_full_3m.npz",
+  "cache_sha256": "98406b669a81a0f2f3a2df2230e23ee67793c46df91e85fe707129c3da7159bd",
+  "script_sha256": "aab09970dec160c8acb918f0967a1c4dc3e10c0e8446abf2943c327a5f205900",
+  "count": 3000000,
+  "limit": 0,
+  "group": "digit permutations; row permutations within bands; band permutations; column permutations within stacks; stack permutations; transpose",
+  "pynauty_version": "2.8.8.1",
+  "self_test": {
+    "positive_transform_tests": 150,
+    "negative_tests": 2,
+    "empty_grid_group_order": 1218998108160,
+    "expected_group_order": 1218998108160,
+    "elapsed_seconds": 0.03445819020271301,
+    "pynauty_version": "2.8.8.1"
+  }
+}

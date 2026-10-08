@@ -1,0 +1,135 @@
+{
+  "status": "complete",
+  "checkpoint_sha256": "6c43b0844c7d1171eb5988e279e846a6056cc82cfa19ae110654b04cd72a7db6",
+  "evaluations": [
+    {
+      "steps": 64,
+      "summary": "results/A06/rrn128_reference/model_rrn_paper_d128_t32_eval64_50k_20260610_6c43b084/T64/summary.json",
+      "summary_sha256": "984ecd48c9b521bf1b3b02fdf582f1ec6d01d4cd1d1df75ba23347dd40362203",
+      "per_puzzle": "results/A06/rrn128_reference/model_rrn_paper_d128_t32_eval64_50k_20260610_6c43b084/T64/per_puzzle.npz",
+      "metrics": [
+        {
+          "bucket": "all",
+          "n": 300702,
+          "exact_count": 272241,
+          "exact_rate": 0.9053514775425504,
+          "valid_count": 272241,
+          "valid_rate": 0.9053514775425504,
+          "clue_ok_count": 300702,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 272241,
+          "grid_valid_ignoring_clues_rate": 0.9053514775425504,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9762304766517131
+        },
+        {
+          "bucket": "rating_0",
+          "n": 129436,
+          "exact_count": 127978,
+          "exact_rate": 0.9887357458512315,
+          "valid_count": 127978,
+          "valid_rate": 0.9887357458512315,
+          "clue_ok_count": 129436,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 127978,
+          "grid_valid_ignoring_clues_rate": 0.9887357458512315,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9975987942370299
+        },
+        {
+          "bucket": "rating_0_1",
+          "n": 9285,
+          "exact_count": 8950,
+          "exact_rate": 0.9639203015616586,
+          "valid_count": 8950,
+          "valid_rate": 0.9639203015616586,
+          "clue_ok_count": 9285,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 8950,
+          "grid_valid_ignoring_clues_rate": 0.9639203015616586,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9926231742422732
+        },
+        {
+          "bucket": "rating_1_2",
+          "n": 79488,
+          "exact_count": 71542,
+          "exact_rate": 0.9000352254428341,
+          "valid_count": 71542,
+          "valid_rate": 0.9000352254428341,
+          "clue_ok_count": 79488,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 71542,
+          "grid_valid_ignoring_clues_rate": 0.9000352254428341,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9759187193097553
+        },
+        {
+          "bucket": "rating_2_4",
+          "n": 75950,
+          "exact_count": 59520,
+          "exact_rate": 0.7836734693877551,
+          "valid_count": 59520,
+          "valid_rate": 0.7836734693877551,
+          "clue_ok_count": 75950,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 59520,
+          "grid_valid_ignoring_clues_rate": 0.7836734693877551,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9442006193158267
+        },
+        {
+          "bucket": "rating_4_plus",
+          "n": 6543,
+          "exact_count": 4251,
+          "exact_rate": 0.6497019715726731,
+          "valid_count": 4251,
+          "valid_rate": 0.6497019715726731,
+          "clue_ok_count": 6543,
+          "clue_ok_rate": 1.0,
+          "grid_valid_ignoring_clues_count": 4251,
+          "grid_valid_ignoring_clues_rate": 0.6497019715726731,
+          "valid_not_exact_count": 0,
+          "cell_accuracy": 0.9058366023061117
+        }
+      ]
+    }
+  ],
+  "signature": {
+    "args": {
+      "checkpoints": [
+        "checkpoints/model_rrn_paper_d128_t32_eval64_50k_20260610.pt"
+      ],
+      "cache_path": "data/cache_full_3m.npz",
+      "output_dir": "results/A06/rrn128_reference",
+      "steps": [
+        64
+      ],
+      "split": 2,
+      "test_global_ids": "results/clean_evaluation/test_global_ids.npy",
+      "rating_min_exclusive": null,
+      "offset": 0,
+      "limit": 0,
+      "batch_size": 128,
+      "device": "cuda",
+      "warmup": 2,
+      "timing_samples": 0,
+      "threads": 1,
+      "seed": 20260929,
+      "readout_protocol": "common_final"
+    },
+    "checkpoint_sha256": "6c43b0844c7d1171eb5988e279e846a6056cc82cfa19ae110654b04cd72a7db6",
+    "cache_sha256": "98406b669a81a0f2f3a2df2230e23ee67793c46df91e85fe707129c3da7159bd",
+    "test_manifest_sha256": "824e4450ae41bdd32b41341cecbb90c6744f971a14524e01415e347913ffcde6",
+    "calibration_sha256": null,
+    "source_sha256": {
+      "e2_eval_task.py": "f3f9a458b950dd980a3199b3a7720fd4f49c0ebbb6cd8454fa6a30f92f3f1ab4",
+      "e2_eval_checkpoints.py": "8f14886e4143508e63b57cfb498420d5b8399d2c5dafbf983e6b81b18a0820ab",
+      "e2_rollout.py": "70270eb21b72d9a953aa8c18af9755f14d05ca1fa806e49cd604db8cbea58287",
+      "e2_metrics.py": "9f8b37ca2bae31278df223cce842b95b78cfa68075f9aadb54c35cf85a51f4c4",
+      "e2_architectures.py": "ef9440e1b307adca29607c3275e6345aed77fbda2d4ecfd53536c656ccc99fde"
+    },
+    "expected_n": 300702
+  },
+  "seed": 20260929
+}

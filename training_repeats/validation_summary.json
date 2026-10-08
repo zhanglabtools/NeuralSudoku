@@ -1,0 +1,767 @@
+{
+  "passed": true,
+  "scope": "Statistical recomputation of saved per-puzzle outputs; no model inference or training.",
+  "training_runs": {
+    "A07": 9,
+    "A08": 3
+  },
+  "percentage_units": "Mean in percent; sample SD in percentage points; ddof=1.",
+  "aggregates": [
+    {
+      "experiment": "A07",
+      "architecture": "graph",
+      "bucket": "all",
+      "independent_training_runs": 3,
+      "mean_exact_pct": 89.05749435210497,
+      "sample_sd_percentage_points": 1.0989518590352256,
+      "display_mean_plus_minus_sd": "89.06 ± 1.10"
+    },
+    {
+      "experiment": "A07",
+      "architecture": "graph",
+      "bucket": "D4",
+      "independent_training_runs": 3,
+      "mean_exact_pct": 65.09755973304804,
+      "sample_sd_percentage_points": 2.5100498041935375,
+      "display_mean_plus_minus_sd": "65.10 ± 2.51"
+    },
+    {
+      "experiment": "A07",
+      "architecture": "hypergraph",
+      "bucket": "all",
+      "independent_training_runs": 3,
+      "mean_exact_pct": 60.46251770856196,
+      "sample_sd_percentage_points": 52.363098819801245,
+      "display_mean_plus_minus_sd": "60.46 ± 52.36"
+    },
+    {
+      "experiment": "A07",
+      "architecture": "hypergraph",
+      "bucket": "D4",
+      "independent_training_runs": 3,
+      "mean_exact_pct": 40.934331855927454,
+      "sample_sd_percentage_points": 35.45365098563813,
+      "display_mean_plus_minus_sd": "40.93 ± 35.45"
+    },
+    {
+      "experiment": "A07",
+      "architecture": "joint",
+      "bucket": "all",
+      "independent_training_runs": 3,
+      "mean_exact_pct": 92.04018153077355,
+      "sample_sd_percentage_points": 0.949272576346367,
+      "display_mean_plus_minus_sd": "92.04 ± 0.95"
+    },
+    {
+      "experiment": "A07",
+      "architecture": "joint",
+      "bucket": "D4",
+      "independent_training_runs": 3,
+      "mean_exact_pct": 69.55015538234245,
+      "sample_sd_percentage_points": 1.7576256956477194,
+      "display_mean_plus_minus_sd": "69.55 ± 1.76"
+    },
+    {
+      "experiment": "A08",
+      "architecture": "NeuralSudoku",
+      "bucket": "all",
+      "independent_training_runs": 3,
+      "mean_exact_pct": 99.64483109523714,
+      "sample_sd_percentage_points": 0.15328484029255918,
+      "display_mean_plus_minus_sd": "99.64 ± 0.15"
+    },
+    {
+      "experiment": "A08",
+      "architecture": "NeuralSudoku",
+      "bucket": "D4",
+      "independent_training_runs": 3,
+      "mean_exact_pct": 97.00443221763719,
+      "sample_sd_percentage_points": 0.9777863091379047,
+      "display_mean_plus_minus_sd": "97.00 ± 0.98"
+    }
+  ],
+  "checks": [
+    {
+      "check": "clean_test_count",
+      "passed": true
+    },
+    {
+      "check": "clean_test_unique_ids",
+      "passed": true
+    },
+    {
+      "check": "known_leak_excluded",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/0/saved_step",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/0/test_steps",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/0/aligned_clean_ids",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/0/shapes",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/0/exact_equals_valid",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/0/all/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/0/all/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 269486,
+        "paper": 269486
+      }
+    },
+    {
+      "check": "A07/graph/0/all/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/0/D4/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/0/D4/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 4309,
+        "paper": 4309
+      }
+    },
+    {
+      "check": "A07/graph/0/D4/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/1/saved_step",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/1/test_steps",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/1/aligned_clean_ids",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/1/shapes",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/1/exact_equals_valid",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/1/all/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/1/all/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 269917,
+        "paper": 269917
+      }
+    },
+    {
+      "check": "A07/graph/1/all/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/1/D4/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/1/D4/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 4393,
+        "paper": 4393
+      }
+    },
+    {
+      "check": "A07/graph/1/D4/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/2/saved_step",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/2/test_steps",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/2/aligned_clean_ids",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/2/shapes",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/2/exact_equals_valid",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/2/all/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/2/all/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 263990,
+        "paper": 263990
+      }
+    },
+    {
+      "check": "A07/graph/2/all/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/2/D4/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/graph/2/D4/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 4076,
+        "paper": 4076
+      }
+    },
+    {
+      "check": "A07/graph/2/D4/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/0/saved_step",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/0/test_steps",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/0/aligned_clean_ids",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/0/shapes",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/0/exact_equals_valid",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/0/all/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/0/all/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 271734,
+        "paper": 271734
+      }
+    },
+    {
+      "check": "A07/hypergraph/0/all/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/0/D4/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/0/D4/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 3985,
+        "paper": 3985
+      }
+    },
+    {
+      "check": "A07/hypergraph/0/D4/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/1/saved_step",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/1/test_steps",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/1/aligned_clean_ids",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/1/shapes",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/1/exact_equals_valid",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/1/all/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/1/all/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 0,
+        "paper": 0
+      }
+    },
+    {
+      "check": "A07/hypergraph/1/all/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/1/D4/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/1/D4/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 0,
+        "paper": 0
+      }
+    },
+    {
+      "check": "A07/hypergraph/1/D4/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/2/saved_step",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/2/test_steps",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/2/aligned_clean_ids",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/2/shapes",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/2/exact_equals_valid",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/2/all/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/2/all/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 273702,
+        "paper": 273702
+      }
+    },
+    {
+      "check": "A07/hypergraph/2/all/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/2/D4/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/hypergraph/2/D4/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 4050,
+        "paper": 4050
+      }
+    },
+    {
+      "check": "A07/hypergraph/2/D4/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/0/saved_step",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/0/test_steps",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/0/aligned_clean_ids",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/0/shapes",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/0/exact_equals_valid",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/0/all/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/0/all/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 277718,
+        "paper": 277718
+      }
+    },
+    {
+      "check": "A07/joint/0/all/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/0/D4/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/0/D4/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 4622,
+        "paper": 4622
+      }
+    },
+    {
+      "check": "A07/joint/0/D4/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/1/saved_step",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/1/test_steps",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/1/aligned_clean_ids",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/1/shapes",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/1/exact_equals_valid",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/1/all/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/1/all/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 273558,
+        "paper": 273558
+      }
+    },
+    {
+      "check": "A07/joint/1/all/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/1/D4/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/1/D4/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 4418,
+        "paper": 4418
+      }
+    },
+    {
+      "check": "A07/joint/1/D4/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/2/saved_step",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/2/test_steps",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/2/aligned_clean_ids",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/2/shapes",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/2/exact_equals_valid",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/2/all/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/2/all/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 279024,
+        "paper": 279024
+      }
+    },
+    {
+      "check": "A07/joint/2/all/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/2/D4/denominator",
+      "passed": true
+    },
+    {
+      "check": "A07/joint/2/D4/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 4612,
+        "paper": 4612
+      }
+    },
+    {
+      "check": "A07/joint/2/D4/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/0/completed",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/0/aligned_clean_ids",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/0/shapes",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/0/exact_equals_valid",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/0/all/denominator",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/0/all/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 299657,
+        "paper": 299657
+      }
+    },
+    {
+      "check": "A08/NeuralSudoku/0/all/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/0/D4/denominator",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/0/D4/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 6356,
+        "paper": 6356
+      }
+    },
+    {
+      "check": "A08/NeuralSudoku/0/D4/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/1/completed",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/1/aligned_clean_ids",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/1/shapes",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/1/exact_equals_valid",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/1/all/denominator",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/1/all/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 299162,
+        "paper": 299162
+      }
+    },
+    {
+      "check": "A08/NeuralSudoku/1/all/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/1/D4/denominator",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/1/D4/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 6279,
+        "paper": 6279
+      }
+    },
+    {
+      "check": "A08/NeuralSudoku/1/D4/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/2/completed",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/2/aligned_clean_ids",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/2/shapes",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/2/exact_equals_valid",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/2/all/denominator",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/2/all/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 300083,
+        "paper": 300083
+      }
+    },
+    {
+      "check": "A08/NeuralSudoku/2/all/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/2/D4/denominator",
+      "passed": true
+    },
+    {
+      "check": "A08/NeuralSudoku/2/D4/paper_count",
+      "passed": true,
+      "details": {
+        "computed": 6406,
+        "paper": 6406
+      }
+    },
+    {
+      "check": "A08/NeuralSudoku/2/D4/stored_summary",
+      "passed": true
+    },
+    {
+      "check": "A08/all/three_seed_summary",
+      "passed": true
+    },
+    {
+      "check": "A08/D4/three_seed_summary",
+      "passed": true
+    }
+  ],
+  "sources": [
+    {
+      "path": "results/A07/graph_seed0/matched_parameters_fixed_exposure_final/final_9354ff97/T64/per_puzzle.npz",
+      "sha256": "2a73c03e16b4d6c957fae4e5015ccc0e0fe5a913abcee0e65232c1726cba05ba"
+    },
+    {
+      "path": "results/A07/graph_seed1/matched_parameters_fixed_exposure_final/final_0f66cbfd/T64/per_puzzle.npz",
+      "sha256": "c45eea4b3bfa5755194a3a8aeeaf83af528e4ece963da507d49144f3526933fe"
+    },
+    {
+      "path": "results/A07/graph_seed2/matched_parameters_fixed_exposure_final/final_0bd5a9dd/T64/per_puzzle.npz",
+      "sha256": "08a027458fcc1e1b79d8fcb72b473a81f2b2dbe91d07683e02420d3fcf1fc7c4"
+    },
+    {
+      "path": "results/A07/hypergraph_seed0/matched_parameters_fixed_exposure_final/final_88b94431/T64/per_puzzle.npz",
+      "sha256": "eee132c8833ff30962e2fcfe54ecaa5438dbc591d039b7279df0d16a0be00250"
+    },
+    {
+      "path": "results/A07/hypergraph_seed1/matched_parameters_fixed_exposure_final/final_2e160922/T64/per_puzzle.npz",
+      "sha256": "9c51bd60d31b2130d6bc6c094859290269b4208d243db8827987bda1eb4a2aee"
+    },
+    {
+      "path": "results/A07/hypergraph_seed2/matched_parameters_fixed_exposure_final/final_b7c8918b/T64/per_puzzle.npz",
+      "sha256": "64d8ee50dae3716556bea7bc0497d628f5903a37401cda67f034bc851d3a1556"
+    },
+    {
+      "path": "results/A07/joint_seed0/matched_parameters_fixed_exposure_final/final_0d0391ef/T64/per_puzzle.npz",
+      "sha256": "76386cdaf2264d5f793e8b173939a188b390c2ab39e758ebfe80b9193673cfda"
+    },
+    {
+      "path": "results/A07/joint_seed1/matched_parameters_fixed_exposure_final/final_c468568e/T64/per_puzzle.npz",
+      "sha256": "b559e98f02042ab9560ece8a1fd650b8dc3dc6dbf606dfab9f1bf3bad55ea04b"
+    },
+    {
+      "path": "results/A07/joint_seed2/matched_parameters_fixed_exposure_final/final_e176a7b8/T64/per_puzzle.npz",
+      "sha256": "8c598c7ad3276af04f9727070a3eb75ada350a969559ed310de46f34c579468d"
+    },
+    {
+      "path": "results/A08/seed0/test/details.npz",
+      "sha256": "888143965eda5d9b8458fb946d9f13d54d8bda2fb74fa966c2f3154ed14c0a5f"
+    },
+    {
+      "path": "results/A08/seed1/test/details.npz",
+      "sha256": "851cacaa73e1a67e0791e19573f8c88350bbcad6126dfb69fb8f15e3aa75dfb8"
+    },
+    {
+      "path": "results/A08/seed2/test/details.npz",
+      "sha256": "9ad4b2c4114e5a23daad9aa56237a37607565ff395bbe2c6c8021b2516cfc62a"
+    }
+  ]
+}

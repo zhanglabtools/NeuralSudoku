@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "split": 1,
+  "n": 16384,
+  "sample_seed": 20260929,
+  "sampling": "uniform without replacement; sorted global IDs; no outcomes",
+  "cache_sha256": "98406b669a81a0f2f3a2df2230e23ee67793c46df91e85fe707129c3da7159bd",
+  "global_ids_path": "results/A07/validation_selection/global_ids.npy",
+  "global_ids_file_sha256": "83cd2d43d801a29100f6db049981fd0fd1241327cee2566f2c80fc51f755a41e",
+  "global_ids_array_sha256": "1d69793ceda24661bba653dc446ac9d6204195477a5359169823f60aea48df66",
+  "selection_rule": "T64 Exact every 5000 completed updates; strict improvement, earliest tie; no test",
+  "source_sha256": "ec1b064ed3d72ccf64a88e4cd96cda15461b8ac382a77d4d75d95ccc606a4a5d"
+}

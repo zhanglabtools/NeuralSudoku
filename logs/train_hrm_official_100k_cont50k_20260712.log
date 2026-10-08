@@ -1,0 +1,208 @@
+[data] train=2399047 val=10000 test=300703 cache=data/cache_full_3m.npz
+[budget] steps=100000 batch=256 sample_exposures=25600000 equivalent_epochs=10.671 reference_global_batch=2304 reference_optimizer_steps=11112 eval_every=5000
+[load-optimizer] unavailable or reset; optimizer restarts
+[load] model_hrm_official_full_50k_warmup_20260711_final.pt step=50000
+[model] HRM official hidden=512 H=2 L=8 halt=8 layers=(4,4) pos=learned loss=softmax_cross_entropy dtype=bfloat16 device=cuda
+step  50500/100000 loss=0.70342 epoch=5.389 lr=2.961445e-05 acc=0.8938 exact=0.5500 steps=5.53 halted_all=False elapsed=198.7s
+step  51000/100000 loss=0.72923 epoch=5.442 lr=2.922901e-05 acc=0.9077 exact=0.5952 steps=5.21 halted_all=False elapsed=399.8s
+step  51500/100000 loss=0.75393 epoch=5.496 lr=2.884375e-05 acc=0.8762 exact=0.5152 steps=5.58 halted_all=False elapsed=600.9s
+step  52000/100000 loss=0.70383 epoch=5.549 lr=2.845878e-05 acc=0.9095 exact=0.6122 steps=5.51 halted_all=False elapsed=802.3s
+step  52500/100000 loss=0.69910 epoch=5.602 lr=2.807418e-05 acc=0.8710 exact=0.4286 steps=6.07 halted_all=False elapsed=1005.3s
+step  53000/100000 loss=0.73918 epoch=5.656 lr=2.769007e-05 acc=0.9006 exact=0.5714 steps=5.17 halted_all=False elapsed=1210.1s
+step  53500/100000 loss=0.76554 epoch=5.709 lr=2.730652e-05 acc=0.8374 exact=0.4000 steps=6.43 halted_all=False elapsed=1414.4s
+step  54000/100000 loss=0.68168 epoch=5.762 lr=2.692364e-05 acc=0.9031 exact=0.5902 steps=5.44 halted_all=False elapsed=1616.9s
+step  54500/100000 loss=0.70305 epoch=5.816 lr=2.654151e-05 acc=0.8717 exact=0.4722 steps=6.17 halted_all=False elapsed=1818.2s
+step  55000/100000 loss=0.70889 epoch=5.869 lr=2.616024e-05 acc=0.8910 exact=0.5854 steps=5.46 halted_all=False elapsed=2019.8s
+[val] step=55000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol avg_steps
+all            10000   0.5542  0.5542  0.9988   0.8912    6.825     8.000
+rating_0        4379   0.6974  0.6974  0.9977   0.9375    4.597     8.000
+rating_0_1       298   0.5235  0.5235  1.0000   0.8966    6.869     8.000
+rating_1_2      2650   0.5147  0.5147  0.9996   0.8797    7.419     8.000
+rating_2_4      2455   0.3707  0.3707  0.9996   0.8300    9.743     8.000
+rating_4_plus    218   0.2661  0.2661  1.0000   0.7837   11.445     8.000
+[save] model_hrm_official_100k_cont50k_20260712_best.pt best_val_exact=0.5542
+step  55500/100000 loss=0.64581 epoch=5.922 lr=2.577992e-05 acc=0.9240 exact=0.6800 steps=4.98 halted_all=False elapsed=2275.2s
+step  56000/100000 loss=0.68205 epoch=5.976 lr=2.540064e-05 acc=0.9282 exact=0.6667 steps=5.08 halted_all=False elapsed=2476.3s
+step  56500/100000 loss=0.70859 epoch=6.029 lr=2.502249e-05 acc=0.8978 exact=0.5128 steps=5.54 halted_all=False elapsed=2678.0s
+step  57000/100000 loss=0.68831 epoch=6.082 lr=2.464557e-05 acc=0.8944 exact=0.5000 steps=5.67 halted_all=False elapsed=2881.1s
+step  57500/100000 loss=0.72139 epoch=6.136 lr=2.426998e-05 acc=0.9126 exact=0.6415 steps=5.17 halted_all=False elapsed=3084.9s
+step  58000/100000 loss=0.67692 epoch=6.189 lr=2.389579e-05 acc=0.9043 exact=0.5962 steps=5.54 halted_all=False elapsed=3287.5s
+step  58500/100000 loss=0.71784 epoch=6.242 lr=2.352311e-05 acc=0.8821 exact=0.5294 steps=5.61 halted_all=False elapsed=3489.2s
+step  59000/100000 loss=0.72916 epoch=6.296 lr=2.315203e-05 acc=0.8889 exact=0.5882 steps=5.24 halted_all=False elapsed=3690.7s
+step  59500/100000 loss=0.71457 epoch=6.349 lr=2.278264e-05 acc=0.9184 exact=0.6341 steps=5.49 halted_all=False elapsed=3892.2s
+step  60000/100000 loss=0.73528 epoch=6.403 lr=2.241504e-05 acc=0.8882 exact=0.5526 steps=5.42 halted_all=False elapsed=4094.3s
+[val] step=60000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol avg_steps
+all            10000   0.5878  0.5878  0.9997   0.8990    6.523     8.000
+rating_0        4379   0.7365  0.7365  0.9998   0.9446    4.161     8.000
+rating_0_1       298   0.5671  0.5671  1.0000   0.9056    6.359     8.000
+rating_1_2      2650   0.5302  0.5302  0.9996   0.8849    7.240     8.000
+rating_2_4      2455   0.4163  0.4163  0.9996   0.8420    9.493     8.000
+rating_4_plus    218   0.2615  0.2615  1.0000   0.7863   12.018     8.000
+[save] model_hrm_official_100k_cont50k_20260712_best.pt best_val_exact=0.5878
+step  60500/100000 loss=0.67530 epoch=6.456 lr=2.20493e-05 acc=0.8965 exact=0.5577 steps=5.27 halted_all=False elapsed=4351.7s
+step  61000/100000 loss=0.74801 epoch=6.509 lr=2.168552e-05 acc=0.8727 exact=0.4889 steps=5.73 halted_all=False elapsed=4555.4s
+step  61500/100000 loss=0.70995 epoch=6.563 lr=2.13238e-05 acc=0.8901 exact=0.5294 steps=5.69 halted_all=False elapsed=4759.4s
+step  62000/100000 loss=0.69286 epoch=6.616 lr=2.096421e-05 acc=0.9246 exact=0.6957 steps=4.98 halted_all=False elapsed=4962.0s
+step  62500/100000 loss=0.71806 epoch=6.669 lr=2.060686e-05 acc=0.8848 exact=0.5625 steps=5.40 halted_all=False elapsed=5163.7s
+step  63000/100000 loss=0.68030 epoch=6.723 lr=2.025182e-05 acc=0.8978 exact=0.5957 steps=5.43 halted_all=False elapsed=5364.7s
+step  63500/100000 loss=0.73974 epoch=6.776 lr=1.989919e-05 acc=0.8738 exact=0.4194 steps=6.29 halted_all=False elapsed=5566.1s
+step  64000/100000 loss=0.73765 epoch=6.829 lr=1.954905e-05 acc=0.8688 exact=0.5000 steps=5.83 halted_all=False elapsed=5768.0s
+step  64500/100000 loss=0.70616 epoch=6.883 lr=1.920149e-05 acc=0.8984 exact=0.5455 steps=5.73 halted_all=False elapsed=5969.7s
+step  65000/100000 loss=0.69837 epoch=6.936 lr=1.88566e-05 acc=0.9042 exact=0.6098 steps=5.07 halted_all=False elapsed=6172.3s
+[val] step=65000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol avg_steps
+all            10000   0.6024  0.6024  0.9997   0.9031    6.582     8.000
+rating_0        4379   0.7538  0.7538  1.0000   0.9485    3.989     8.000
+rating_0_1       298   0.5738  0.5738  1.0000   0.9071    6.443     8.000
+rating_1_2      2650   0.5445  0.5445  0.9992   0.8889    7.575     8.000
+rating_2_4      2455   0.4289  0.4289  0.9996   0.8476    9.615     8.000
+rating_4_plus    218   0.2569  0.2569  1.0000   0.7841   12.628     8.000
+[save] model_hrm_official_100k_cont50k_20260712_best.pt best_val_exact=0.6024
+step  65500/100000 loss=0.69231 epoch=6.989 lr=1.851445e-05 acc=0.9126 exact=0.6471 steps=5.08 halted_all=False elapsed=6432.5s
+step  66000/100000 loss=0.66116 epoch=7.043 lr=1.817514e-05 acc=0.9198 exact=0.6600 steps=5.12 halted_all=False elapsed=6636.1s
+step  66500/100000 loss=0.64722 epoch=7.096 lr=1.783874e-05 acc=0.9360 exact=0.7541 steps=4.64 halted_all=False elapsed=6838.4s
+step  67000/100000 loss=0.67067 epoch=7.150 lr=1.750535e-05 acc=0.9201 exact=0.6415 steps=4.87 halted_all=False elapsed=7039.8s
+step  67500/100000 loss=0.66673 epoch=7.203 lr=1.717503e-05 acc=0.9201 exact=0.6491 steps=5.26 halted_all=False elapsed=7241.1s
+step  68000/100000 loss=0.69015 epoch=7.256 lr=1.684789e-05 acc=0.8984 exact=0.5962 steps=5.25 halted_all=False elapsed=7442.0s
+step  68500/100000 loss=0.67676 epoch=7.310 lr=1.652398e-05 acc=0.9077 exact=0.6600 steps=5.10 halted_all=False elapsed=7643.0s
+step  69000/100000 loss=0.68176 epoch=7.363 lr=1.620341e-05 acc=0.8808 exact=0.5000 steps=5.78 halted_all=False elapsed=7844.2s
+step  69500/100000 loss=0.69013 epoch=7.416 lr=1.588623e-05 acc=0.9274 exact=0.6585 steps=4.83 halted_all=False elapsed=8046.5s
+step  70000/100000 loss=0.67915 epoch=7.470 lr=1.557254e-05 acc=0.9070 exact=0.5918 steps=5.49 halted_all=False elapsed=8249.6s
+[val] step=70000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol avg_steps
+all            10000   0.6251  0.6251  0.9992   0.9071    6.055     8.000
+rating_0        4379   0.7737  0.7737  0.9984   0.9528    3.555     8.000
+rating_0_1       298   0.5973  0.5973  1.0000   0.9085    6.010     8.000
+rating_1_2      2650   0.5713  0.5713  0.9996   0.8940    6.917     8.000
+rating_2_4      2455   0.4497  0.4497  1.0000   0.8498    9.108     8.000
+rating_4_plus    218   0.3073  0.3073  1.0000   0.7924   11.482     8.000
+[save] model_hrm_official_100k_cont50k_20260712_best.pt best_val_exact=0.6251
+step  70500/100000 loss=0.64667 epoch=7.523 lr=1.526241e-05 acc=0.9079 exact=0.6522 steps=4.89 halted_all=False elapsed=8507.4s
+step  71000/100000 loss=0.69935 epoch=7.576 lr=1.495592e-05 acc=0.8926 exact=0.5581 steps=5.23 halted_all=False elapsed=8709.6s
+step  71500/100000 loss=0.64086 epoch=7.630 lr=1.465313e-05 acc=0.9311 exact=0.7308 steps=4.63 halted_all=False elapsed=8912.3s
+step  72000/100000 loss=0.64648 epoch=7.683 lr=1.435414e-05 acc=0.9180 exact=0.6721 steps=4.74 halted_all=False elapsed=9114.4s
+step  72500/100000 loss=0.69307 epoch=7.736 lr=1.4059e-05 acc=0.8941 exact=0.5957 steps=5.11 halted_all=False elapsed=9316.1s
+step  73000/100000 loss=0.72281 epoch=7.790 lr=1.37678e-05 acc=0.9077 exact=0.6136 steps=5.20 halted_all=False elapsed=9517.6s
+step  73500/100000 loss=0.71761 epoch=7.843 lr=1.34806e-05 acc=0.9171 exact=0.6857 steps=4.89 halted_all=False elapsed=9721.1s
+step  74000/100000 loss=0.63395 epoch=7.896 lr=1.319748e-05 acc=0.9272 exact=0.6610 steps=5.37 halted_all=False elapsed=9925.2s
+step  74500/100000 loss=0.66707 epoch=7.950 lr=1.29185e-05 acc=0.9122 exact=0.6792 steps=4.94 halted_all=False elapsed=10128.1s
+step  75000/100000 loss=0.66128 epoch=8.003 lr=1.264374e-05 acc=0.9390 exact=0.7255 steps=4.84 halted_all=False elapsed=10329.4s
+[val] step=75000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol avg_steps
+all            10000   0.6305  0.6305  0.9997   0.9104    5.897     8.000
+rating_0        4379   0.7805  0.7805  0.9995   0.9551    3.442     8.000
+rating_0_1       298   0.6074  0.6074  1.0000   0.9166    5.738     8.000
+rating_1_2      2650   0.5819  0.5819  0.9996   0.8984    6.655     8.000
+rating_2_4      2455   0.4448  0.4448  1.0000   0.8518    8.996     8.000
+rating_4_plus    218   0.3303  0.3303  1.0000   0.8108   11.312     8.000
+[save] model_hrm_official_100k_cont50k_20260712_best.pt best_val_exact=0.6305
+step  75500/100000 loss=0.67173 epoch=8.057 lr=1.237326e-05 acc=0.9194 exact=0.6792 steps=5.17 halted_all=False elapsed=10585.6s
+step  76000/100000 loss=0.68100 epoch=8.110 lr=1.210713e-05 acc=0.9061 exact=0.5625 steps=5.56 halted_all=False elapsed=10786.7s
+step  76500/100000 loss=0.63874 epoch=8.163 lr=1.184542e-05 acc=0.9085 exact=0.6250 steps=5.04 halted_all=False elapsed=10987.9s
+step  77000/100000 loss=0.65901 epoch=8.217 lr=1.158818e-05 acc=0.9133 exact=0.6596 steps=4.94 halted_all=False elapsed=11188.9s
+step  77500/100000 loss=0.65793 epoch=8.270 lr=1.133549e-05 acc=0.9351 exact=0.7174 steps=4.83 halted_all=False elapsed=11390.6s
+step  78000/100000 loss=0.64324 epoch=8.323 lr=1.10874e-05 acc=0.9278 exact=0.6923 steps=4.94 halted_all=False elapsed=11594.2s
+step  78500/100000 loss=0.66604 epoch=8.377 lr=1.084398e-05 acc=0.8995 exact=0.5952 steps=5.10 halted_all=False elapsed=11798.2s
+step  79000/100000 loss=0.67188 epoch=8.430 lr=1.060529e-05 acc=0.9034 exact=0.6087 steps=5.22 halted_all=False elapsed=12001.2s
+step  79500/100000 loss=0.62976 epoch=8.483 lr=1.037138e-05 acc=0.9468 exact=0.7794 steps=4.41 halted_all=False elapsed=12203.5s
+step  80000/100000 loss=0.66074 epoch=8.537 lr=1.014231e-05 acc=0.9103 exact=0.6316 steps=4.84 halted_all=False elapsed=12405.0s
+[val] step=80000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol avg_steps
+all            10000   0.6653  0.6654  0.9994   0.9162    5.360     8.000
+rating_0        4379   0.8107  0.8109  0.9989   0.9605    2.949     8.000
+rating_0_1       298   0.6275  0.6275  1.0000   0.9156    5.493     8.000
+rating_1_2      2650   0.6132  0.6132  0.9996   0.9030    6.165     8.000
+rating_2_4      2455   0.4969  0.4969  1.0000   0.8621    8.242     8.000
+rating_4_plus    218   0.3257  0.3257  1.0000   0.7991   11.353     8.000
+[save] model_hrm_official_100k_cont50k_20260712_best.pt best_val_exact=0.6653
+step  80500/100000 loss=0.66595 epoch=8.590 lr=9.918142e-06 acc=0.9073 exact=0.6327 steps=5.04 halted_all=False elapsed=12661.6s
+step  81000/100000 loss=0.64137 epoch=8.643 lr=9.698931e-06 acc=0.9284 exact=0.6909 steps=4.71 halted_all=False elapsed=12862.7s
+step  81500/100000 loss=0.66841 epoch=8.697 lr=9.484728e-06 acc=0.9115 exact=0.6667 steps=4.81 halted_all=False elapsed=13064.9s
+step  82000/100000 loss=0.69191 epoch=8.750 lr=9.275587e-06 acc=0.9096 exact=0.5957 steps=5.11 halted_all=False elapsed=13268.6s
+step  82500/100000 loss=0.62946 epoch=8.803 lr=9.071559e-06 acc=0.9116 exact=0.6618 steps=5.06 halted_all=False elapsed=13472.4s
+step  83000/100000 loss=0.63576 epoch=8.857 lr=8.872695e-06 acc=0.9132 exact=0.6379 steps=4.83 halted_all=False elapsed=13675.0s
+step  83500/100000 loss=0.67575 epoch=8.910 lr=8.679044e-06 acc=0.9182 exact=0.7059 steps=5.20 halted_all=False elapsed=13876.5s
+step  84000/100000 loss=0.68780 epoch=8.964 lr=8.490654e-06 acc=0.8995 exact=0.5814 steps=5.19 halted_all=False elapsed=14077.9s
+step  84500/100000 loss=0.66709 epoch=9.017 lr=8.30757e-06 acc=0.8898 exact=0.5962 steps=5.42 halted_all=False elapsed=14278.8s
+step  85000/100000 loss=0.67677 epoch=9.070 lr=8.129839e-06 acc=0.8732 exact=0.5577 steps=5.42 halted_all=False elapsed=14479.6s
+[val] step=85000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol avg_steps
+all            10000   0.6640  0.6640  0.9996   0.9165    5.824     8.000
+rating_0        4379   0.8143  0.8143  0.9995   0.9607    3.145     8.000
+rating_0_1       298   0.6275  0.6275  1.0000   0.9202    6.208     8.000
+rating_1_2      2650   0.6106  0.6106  1.0000   0.9031    6.708     8.000
+rating_2_4      2455   0.4925  0.4925  0.9996   0.8629    8.957     8.000
+rating_4_plus    218   0.2752  0.2752  0.9954   0.7880   13.055     8.000
+step  85500/100000 loss=0.66072 epoch=9.124 lr=7.957504e-06 acc=0.9509 exact=0.7778 steps=4.24 halted_all=False elapsed=14735.7s
+step  86000/100000 loss=0.61466 epoch=9.177 lr=7.790608e-06 acc=0.9302 exact=0.7167 steps=4.72 halted_all=False elapsed=14940.6s
+step  86500/100000 loss=0.64246 epoch=9.230 lr=7.629192e-06 acc=0.9391 exact=0.7759 steps=4.48 halted_all=False elapsed=15144.1s
+step  87000/100000 loss=0.66701 epoch=9.284 lr=7.473295e-06 acc=0.8833 exact=0.5667 steps=5.27 halted_all=False elapsed=15346.2s
+step  87500/100000 loss=0.68243 epoch=9.337 lr=7.322956e-06 acc=0.9139 exact=0.7209 steps=4.86 halted_all=False elapsed=15548.1s
+step  88000/100000 loss=0.62321 epoch=9.390 lr=7.178213e-06 acc=0.9172 exact=0.6923 steps=5.03 halted_all=False elapsed=15749.4s
+step  88500/100000 loss=0.60625 epoch=9.444 lr=7.0391e-06 acc=0.9249 exact=0.6349 steps=4.86 halted_all=False elapsed=15950.4s
+step  89000/100000 loss=0.61520 epoch=9.497 lr=6.905653e-06 acc=0.9172 exact=0.6897 steps=4.72 halted_all=False elapsed=16151.4s
+step  89500/100000 loss=0.69965 epoch=9.550 lr=6.777904e-06 acc=0.9133 exact=0.6667 steps=5.10 halted_all=False elapsed=16353.4s
+step  90000/100000 loss=0.64994 epoch=9.604 lr=6.655885e-06 acc=0.9343 exact=0.6981 steps=5.15 halted_all=False elapsed=16558.2s
+[val] step=90000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol avg_steps
+all            10000   0.6725  0.6725  0.9997   0.9189    5.569     8.000
+rating_0        4379   0.8162  0.8162  0.9995   0.9615    3.045     8.000
+rating_0_1       298   0.6275  0.6275  1.0000   0.9200    5.671     8.000
+rating_1_2      2650   0.6294  0.6294  0.9996   0.9085    6.206     8.000
+rating_2_4      2455   0.4994  0.4994  1.0000   0.8645    8.793     8.000
+rating_4_plus    218   0.3211  0.3211  1.0000   0.8000   12.087     8.000
+[save] model_hrm_official_100k_cont50k_20260712_best.pt best_val_exact=0.6725
+step  90500/100000 loss=0.62701 epoch=9.657 lr=6.539625e-06 acc=0.9385 exact=0.7167 steps=4.53 halted_all=False elapsed=16817.4s
+step  91000/100000 loss=0.66875 epoch=9.711 lr=6.429154e-06 acc=0.9210 exact=0.6977 steps=4.70 halted_all=False elapsed=17019.6s
+step  91500/100000 loss=0.63467 epoch=9.764 lr=6.324499e-06 acc=0.9198 exact=0.7083 steps=4.44 halted_all=False elapsed=17221.4s
+step  92000/100000 loss=0.63721 epoch=9.817 lr=6.225686e-06 acc=0.9387 exact=0.7308 steps=4.69 halted_all=False elapsed=17422.9s
+step  92500/100000 loss=0.59569 epoch=9.871 lr=6.132738e-06 acc=0.9325 exact=0.7167 steps=4.62 halted_all=False elapsed=17623.9s
+step  93000/100000 loss=0.66184 epoch=9.924 lr=6.045679e-06 acc=0.8976 exact=0.5532 steps=5.28 halted_all=False elapsed=17825.1s
+step  93500/100000 loss=0.62220 epoch=9.977 lr=5.964531e-06 acc=0.9257 exact=0.7018 steps=4.46 halted_all=False elapsed=18027.7s
+step  94000/100000 loss=0.65112 epoch=10.031 lr=5.889312e-06 acc=0.8998 exact=0.6078 steps=5.14 halted_all=False elapsed=18232.5s
+step  94500/100000 loss=0.63205 epoch=10.084 lr=5.820043e-06 acc=0.9286 exact=0.7031 steps=4.78 halted_all=False elapsed=18435.6s
+step  95000/100000 loss=0.69304 epoch=10.137 lr=5.75674e-06 acc=0.8897 exact=0.5333 steps=5.53 halted_all=False elapsed=18637.7s
+[val] step=95000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol avg_steps
+all            10000   0.6660  0.6660  0.9958   0.9210    5.524     8.000
+rating_0        4379   0.8095  0.8095  0.9938   0.9643    2.958     8.000
+rating_0_1       298   0.6174  0.6174  0.9966   0.9202    5.849     8.000
+rating_1_2      2650   0.6215  0.6215  0.9977   0.9094    6.246     8.000
+rating_2_4      2455   0.4978  0.4978  0.9967   0.8671    8.679     8.000
+rating_4_plus    218   0.2844  0.2844  1.0000   0.8008   12.294     8.000
+step  95500/100000 loss=0.68237 epoch=10.191 lr=5.699419e-06 acc=0.9355 exact=0.7500 steps=4.50 halted_all=False elapsed=18893.1s
+step  96000/100000 loss=0.65834 epoch=10.244 lr=5.648093e-06 acc=0.9330 exact=0.7143 steps=4.63 halted_all=False elapsed=19094.1s
+step  96500/100000 loss=0.63779 epoch=10.297 lr=5.602776e-06 acc=0.9299 exact=0.7288 steps=4.54 halted_all=False elapsed=19294.9s
+step  97000/100000 loss=0.67929 epoch=10.351 lr=5.563479e-06 acc=0.8884 exact=0.5652 steps=5.13 halted_all=False elapsed=19496.2s
+step  97500/100000 loss=0.61864 epoch=10.404 lr=5.53021e-06 acc=0.9047 exact=0.6000 steps=5.03 halted_all=False elapsed=19700.4s
+step  98000/100000 loss=0.64556 epoch=10.457 lr=5.50298e-06 acc=0.9272 exact=0.7000 steps=4.90 halted_all=False elapsed=19905.2s
+step  98500/100000 loss=0.61626 epoch=10.511 lr=5.481794e-06 acc=0.9338 exact=0.7344 steps=4.52 halted_all=False elapsed=20108.4s
+step  99000/100000 loss=0.65815 epoch=10.564 lr=5.466657e-06 acc=0.9079 exact=0.6232 steps=5.12 halted_all=False elapsed=20310.7s
+step  99500/100000 loss=0.69079 epoch=10.618 lr=5.457573e-06 acc=0.9187 exact=0.6341 steps=5.56 halted_all=False elapsed=20512.5s
+step 100000/100000 loss=0.68028 epoch=10.671 lr=5.454545e-06 acc=0.9471 exact=0.7885 steps=4.27 halted_all=False elapsed=20713.9s
+[val] step=100000
+bucket          n      exact   valid   clue_ok cell_acc avg_viol avg_steps
+all            10000   0.6820  0.6820  0.9997   0.9217    5.522     8.000
+rating_0        4379   0.8328  0.8328  0.9998   0.9656    2.811     8.000
+rating_0_1       298   0.6611  0.6611  1.0000   0.9278    5.456     8.000
+rating_1_2      2650   0.6343  0.6343  0.9992   0.9096    6.320     8.000
+rating_2_4      2455   0.4978  0.4978  1.0000   0.8650    8.936     8.000
+rating_4_plus    218   0.3349  0.3349  1.0000   0.8166   11.927     8.000
+[save] model_hrm_official_100k_cont50k_20260712_best.pt best_val_exact=0.6820
+[save-final] checkpoints/model_hrm_official_100k_cont50k_20260712_final.pt
+[progress] seen=50000 elapsed=269.6s rate=185.48/s
+[progress] seen=100000 elapsed=539.6s rate=185.31/s
+[progress] seen=150000 elapsed=811.3s rate=184.88/s
+[progress] seen=200000 elapsed=1082.5s rate=184.76/s
+[progress] seen=250000 elapsed=1351.2s rate=185.02/s
+[progress] seen=300000 elapsed=1619.5s rate=185.24/s
+[test] final
+bucket          n      exact   valid   clue_ok cell_acc avg_viol avg_steps
+all           300703   0.6840  0.6840  0.9997   0.9223    5.468     8.000
+rating_0      129436   0.8355  0.8355  0.9997   0.9661    2.763     8.000
+rating_0_1      9285   0.7237  0.7237  0.9996   0.9419    4.332     8.000
+rating_1_2     79489   0.6367  0.6367  0.9997   0.9109    6.237     8.000
+rating_2_4     75950   0.4978  0.4978  0.9998   0.8657    8.907     8.000
+rating_4_plus   6543   0.3667  0.3667  0.9994   0.8218   11.337     8.000

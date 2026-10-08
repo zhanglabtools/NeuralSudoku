@@ -1,0 +1,4 @@
+# Core model training and evaluation. Install the PyTorch build appropriate for the hardware.
+numpy
+pandas
+torch
